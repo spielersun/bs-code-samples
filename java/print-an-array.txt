@@ -1,0 +1,9 @@
+String[] liste = new String[] {"Eren", "Ceren", "Deren", "Beren"};
+double[] notlar = {6.2, 4.3, 9.1, 2.0};
+int[] kanaat = {8, 9, 4, 1};
+String[][] boyutluListe= new String[][] {{"Eren", "Tophane"}, {"Ersem", "Levent"}};
+
+System.out.println(Arrays.toString(array));
+System.out.println(Arrays.toString(notlar));
+System.out.println(Arrays.toString(kanaat));
+System.out.println(Arrays.deepToString(boyutluListe));

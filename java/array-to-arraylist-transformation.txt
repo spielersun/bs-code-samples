@@ -1,0 +1,10 @@
+import java.lang.Math;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Hello{
+     public static void main(String[] args){
+          ArrayList<Integer> yeniListe = new ArrayList<Integer>(Arrays.asList(5,7,12));
+          System.out.print(yeniListe);
+     }
+}
