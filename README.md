@@ -1,2 +1,3 @@
 # bs-code-examples
-codes which written on bilgisayamiyorum.com
+code examples which written on bilgisayamiyorum.com
+JAVA: http://www.bilgisayamiyorum.com/compute/category/JAVA/
