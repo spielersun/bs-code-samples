@@ -1,0 +1,33 @@
+public class Insertion{
+     public static void main(String[] args){
+          int[] sirasizliste = {42,4,23,16,8,15};
+          insertionSort(sirasizliste);
+     }
+
+     public static void insertionSort(int liste[]){
+          int uzunluk = liste.length;
+          for (int k = 1; k < uzunluk; k++) {
+               int pivot = liste[k];
+               int i = k-1;
+               while ( (i > -1) && (liste [i] > pivot) ) {
+                    liste[i+1] = liste[i];
+                    i--;
+               }
+               liste[i+1] = pivot;
+          }
+          sayiListesiYazdir(liste);
+     }
+
+     private static void sayiListesiYazdir(int[] liste) {
+          for (int j = 0; j < liste.length; j++) {
+               if (j + 1 == liste.length){
+                    System.out.print(liste[j] + ")");
+               }else if(j == 0){
+                    System.out.print("(" + liste[j] + ",");
+               }else{
+                    System.out.print(liste[j] + ",");
+               }
+          }
+          System.out.println("\n");
+     }
+}
