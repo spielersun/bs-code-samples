@@ -1,0 +1,10 @@
+puts case osman
+when 1..9
+     "Osman 1 ile 9 arasýnda."
+when 10
+     "Osman çok iyi."
+when String
+     "Osman maalesef yazý, sayý olsa daha iyi olurdu."
+else
+     "Sen bana bunu verdin #{osman} ama bu benim pek bir iþime yaramýyor."
+end

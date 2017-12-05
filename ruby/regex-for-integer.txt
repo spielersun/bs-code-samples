@@ -1,0 +1,5 @@
+def sayi_mi?(degisken)
+     degisken.to_s.match(/\A[+-]?\d+?(\.\d+)?\Z/) == nil ? false : true
+end
+
+2017.is_a? Integer
