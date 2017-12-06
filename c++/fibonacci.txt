@@ -1,0 +1,15 @@
+#include <iostream> 
+using namespace std; // Temel kütüphaneleri çaðýrýyorum
+
+int fib(int x) {
+	if (x == 1 || x == 2) { // Ýstenen fibonacci sayýsý 1 ya da iki ise 1 döndürüyorum
+        	return 1;  // fib(1) e geldiðinde iþlemi sonlandýrdýðým için fib(0) a hiç düþmüyor
+	} 
+        else { // Fonksiyon tamamen bitmeden içine baþka fonksiyon çaðýrýyorum
+            	return fib(x-1)+fib(x-2);  // Sayýlar 1 veya 2 ye ulaþana kadar bu devam ediyor
+        }
+}
+
+int main() {
+	cout << fib(32) << endl;
+}
