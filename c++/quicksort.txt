@@ -1,0 +1,65 @@
+#include "stdafx.h"
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void quickSort(vector<int>&, int, int);
+int parcalama(vector<int>&, int, int);
+
+/* Kütüphaneleri çağırıyoruz ve ardından 2 fonksiyonun temel olarak ne alıp ne 
+verceğini belirleyen templateleri yazıyoruz. */
+
+int main(){
+	vector<int> Liste = {21,13,4,2,11,30,16,5,17};
+	int ilk = 0;
+	int son = 9;
+
+	cout << "####### Duzensiz Liste #####d# " << endl;
+	for (auto e : Liste){ cout << e << " "; }
+	cout << endl;
+
+	quickSort(Liste, ilk, son);
+	cout << "####### Duzenli Liste #######" << endl;
+	for (auto e : Liste){ cout << e << " ";}
+	cout << endl;
+
+	system("pause");
+  return 0;
+}
+
+/* Main fonksiyonu işlem yaptığımız ana zorunlu fonksiyondur. Burada bir liste oluşturuyorum, 
+başlangıç ve bitişinin sayısal değerlerini belirliyorum. "cout" lar ve "for" döngüsü ile 
+orjinal listemi gösteriyorum ve ardından belirlediğim değerler ile quicksort fonksiyonunu 
+çalıştırıp, değişmiş listeyi gösteriyorum. Tüm işlemler bitince, pencere ile çıktı gösterdiğim 
+için, kapanmak için benden tuş beklesin diye, programı bekletiyorum. */
+
+void quickSort(vector<int>& Liste, int ilk, int son){
+	int r;
+	if (ilk<son){
+		r = parcalama(Liste, ilk, son);
+    quickSort(Liste, ilk, r);
+    quickSort(Liste, r + 1, son);
+  }
+}
+
+/* Tabii ki bu fonksiyona ilk ile yollanan değer, son olandan küçükse devam edip listeyi bölünmeye 
+yolluyorum. Bölünmüş listeden gelen yeni sayının sol tarafını ve sağ tarafını ayrı ayrı tekrar 
+quicksort a sokuyorum. */
+
+int parcalama(vector<int>& Liste, int ilk, int son){
+  int x = Liste[ilk];
+  int i = ilk;
+  int j;
+
+  for (j = ilk + 1; j<son; j++){
+    if (Liste[j] <= x){
+      i = i + 1;
+      swap(Liste[i], Liste[j]);
+    }
+  }
+  swap(Liste[i], Liste[son]);
+  return i;
+}
+
+/* Belirlenen sayıyla olan karşılaştırmalarına göre yerlerini değiştiriyorum. 
+Pivotu sonuç olarak döndürüyorum ki yeni listeleri oluşturacak nokta o olsun. */
