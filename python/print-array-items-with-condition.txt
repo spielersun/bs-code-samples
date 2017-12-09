@@ -1,0 +1,15 @@
+for i in range(0,3):  #0dan 3e kadar git
+     print ("hello")  #ekrana 3 kere "hello" yazdiracaktir
+
+while(k<5): #k 5 ten buyuk oldugu surece
+     print(str(k+1) + "." + "oyuncu") #ekrana k arti 1, nokta ve oyuncu yaz
+     k+=1 #k yi bir arttir
+
+for i in range(0,10,2): #0dan 10a kadar 2 ser 2 ser git
+     print (i) #ekrana sayiyi yazdir
+
+for i in range (3,30): #3ten 30a kadar git
+     if (i%2 == 0):  #eger sayi cift ise
+          print("even") #cift yaz
+     else: #degilse
+          print("odd") #tek yaz

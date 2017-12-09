@@ -1,0 +1,19 @@
+# Bu x in y kalibi string yani yazi tipinde olan verilerle ugrasiyorsaniz 
+# siklikla karsilacaginiz bir sey, basitce su iki sekilde kullanabilirsiniz, 
+# mesela "mecnun" kelimesinin hikaye adli bir string icerisinde olup 
+# olmadigina bakacaksiniz:
+
+hikaye = "mecnun ve leylanin hikayesi"
+
+if "mecnun" in hikaye:
+	print("Ay Dede")
+
+if "mecnun" not in hikaye:
+	print("Ac Dede")
+
+soru = "derdalmaya mi geldin abi"
+
+if soru.find("erdal") == -1:
+	print ("bakkal bos")
+else:
+	print ("erdal burda")

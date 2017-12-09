@@ -1,0 +1,17 @@
+from datetime import datetime
+datetime.now()
+datetime.now().time()
+
+###############################
+
+from datetime import datetime
+str(datetime.now())
+
+###############################
+
+datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+###############################
+
+from time import gmtime, strftime
+strftime("%Y-%m-%d %H:%M:%S", gmtime())

@@ -1,7 +1,7 @@
-liste = [1, 2, 3, 4] ## Sayý listesi 
-liste2 = [4, 62, 0, 7, 3] ## Sayý listesi 2
+liste = [1, 2, 3, 4] ## Sayi listesi 
+liste2 = [4, 62, 0, 7, 3] ## Sayi listesi 2
 
-birinci = int("".join(map(str, liste))) ## Liste öðeleri alýp mapleyip sonuça yazdýr 
-ikinci = int("".join(map(str, liste2))) ## Liste 2 öðeleri alýp mapleyip ikinci sonuça yazdýr
+birinci = int("".join(map(str, liste))) ## Liste ogeleri alip mapleyip sonuca yazdir 
+ikinci = int("".join(map(str, liste2))) ## Liste 2 ogeleri alip mapleyip ikinci sonuca yazdir
 
-print (birinci, ikinci) ## Ýki sonucu yanyana bas
+print (birinci, ikinci) ## Sonuclari yanyana bas
