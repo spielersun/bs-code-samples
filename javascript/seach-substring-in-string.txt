@@ -1,0 +1,9 @@
+var hikaye = "Gecelerini Beren'i arayarak gecirdi Luthien.";
+var aranacak = "Beren";
+if (hikaye.indexOf(aranacak) !== -1) { bisiYap(); }
+
+// Baska bir yol
+
+var hikaye = "Gecelerini Beren'i arayarak gecirdi Luthien.";
+var aranacak = /Beren/;
+aranacak.test(hikaye);
