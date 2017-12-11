@@ -1,0 +1,7 @@
+/* sayidan yaziya, int to string */
+#include <string>
+std::string yazi = std::to_string(123);
+
+/* yazidan sayiya, string to int */
+#include <string>
+std::int sayi = std::stoi(yazi)     
