@@ -1,0 +1,8 @@
+// Elimizde "list" id sine sahip bir "ul" oldugunu dusunelim. 
+// Bu "ul" nin her "li" sine tiklandiginda o "li"nin icindeki 
+// "span" elementlerinin gorunur olmasini istiyorum
+
+$('ul#list li').live('click', function (e) {
+	e.preventDefault();
+        $(this).children('span').show();
+});

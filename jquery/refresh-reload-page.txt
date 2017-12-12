@@ -1,0 +1,13 @@
+// 1. Yol: URLde #konumlayýcý var ise kullanmayin
+window.location.href = window.location.href; 
+
+// 2. Yol: En temizi (: reload(true) yaparsaniz sunucudan yuklemeye bile calisir sayfayi
+window.location.reload(); 
+
+// 3. Yol: Aynisi ama biraz havali
+history.go(0); 
+
+// Ornek
+$('#osman').click(function() {
+	location.reload(true);
+});
