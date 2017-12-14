@@ -6,8 +6,8 @@ using namespace std;
 void quickSort(vector<int>&, int, int);
 int parcalama(vector<int>&, int, int);
 
-/* Kütüphaneleri çağırıyoruz ve ardından 2 fonksiyonun temel olarak ne alıp ne 
-verceğini belirleyen templateleri yazıyoruz. */
+/* Kutuphaneleri çagiriyoruz ve ardindan 2 fonksiyonun temel olarak ne alip ne 
+vercegini belirleyen templateleri yaziyoruz. */
 
 int main(){
 	vector<int> Liste = {21,13,4,2,11,30,16,5,17};
@@ -27,11 +27,11 @@ int main(){
   return 0;
 }
 
-/* Main fonksiyonu işlem yaptığımız ana zorunlu fonksiyondur. Burada bir liste oluşturuyorum, 
-başlangıç ve bitişinin sayısal değerlerini belirliyorum. "cout" lar ve "for" döngüsü ile 
-orjinal listemi gösteriyorum ve ardından belirlediğim değerler ile quicksort fonksiyonunu 
-çalıştırıp, değişmiş listeyi gösteriyorum. Tüm işlemler bitince, pencere ile çıktı gösterdiğim 
-için, kapanmak için benden tuş beklesin diye, programı bekletiyorum. */
+/* Main fonksiyonu islem yaptigimiz ana zorunlu fonksiyondur. Burada bir liste olusturuyorum, 
+baslangic ve bitisinin sayisal degerlerini belirliyorum. "cout" lar ve "for" dongusu ile 
+orjinal listemi gosteriyorum ve ardindan belirledigim degerler ile quicksort fonksiyonunu 
+çalistirip, degismis listeyi gosteriyorum. Tum islemler bitince, pencere ile cıktı gosterdigim 
+icin, kapanmak icin benden tus beklesin diye, programi bekletiyorum. */
 
 void quickSort(vector<int>& Liste, int ilk, int son){
 	int r;
@@ -42,8 +42,8 @@ void quickSort(vector<int>& Liste, int ilk, int son){
   }
 }
 
-/* Tabii ki bu fonksiyona ilk ile yollanan değer, son olandan küçükse devam edip listeyi bölünmeye 
-yolluyorum. Bölünmüş listeden gelen yeni sayının sol tarafını ve sağ tarafını ayrı ayrı tekrar 
+/* Tabii ki bu fonksiyona ilk ile yollanan deger, son olandan kucukse devam edip listeyi bolunmeye 
+yolluyorum. Bolunmus listeden gelen yeni sayinin sol tarafini ve sag tarafini ayri ayri tekrar 
 quicksort a sokuyorum. */
 
 int parcalama(vector<int>& Liste, int ilk, int son){
@@ -61,5 +61,5 @@ int parcalama(vector<int>& Liste, int ilk, int son){
   return i;
 }
 
-/* Belirlenen sayıyla olan karşılaştırmalarına göre yerlerini değiştiriyorum. 
-Pivotu sonuç olarak döndürüyorum ki yeni listeleri oluşturacak nokta o olsun. */
+/* Belirlenen sayiyla olan karsilastirmalarina gore yerlerini degistiriyorum. 
+Pivotu sonuc olarak donduruyorum ki yeni listeleri olusturacak nokta o olsun. */
