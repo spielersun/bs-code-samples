@@ -1,0 +1,23 @@
+def frequency(r,w):
+    frequencylist = {}
+    wordlist = []
+    words = ((r.read()).lower()).split()
+    for word in words:
+        latin = ""
+        for char in word:
+            if char in '!,.?":;0123456789':
+                char = ""
+            latin += char
+        wordlist.append(latin)
+    for word in wordlist:
+        if word in frequencylist.keys():
+            frequencylist[word] += 1
+        else:
+            frequencylist[word] = 1
+
+    for k,v in sorted(frequencylist.iteritems(), key=lambda (k,v): (v,k), reverse=True):
+        w.write(str(v) + " " + k + "\n")
+    print "Dictionary is ready."
+
+print frequency(open("_shakespeare.txt","r"), open("_frequency.txt", "w"))
+
