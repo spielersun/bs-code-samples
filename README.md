@@ -1,6 +1,6 @@
 ## bilgisayamiyorum.com Code Samples
 
-*NO ultimate goal, these are just code samples taken from bilgisayamiyorum.com which is q&a-ish site that I created in 2010 with ASP.NET. New Django version is live since October 2016.
+*NO ultimate goal, these are just code samples taken from bilgisayamiyorum.com which is q&a-ish site that I created in 2010 with ASP.NET. New Django version is live since October 2016.*
 
 #### Contents taken by their category pages
 
