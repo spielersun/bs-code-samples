@@ -1,0 +1,20 @@
+CREATE PROCEDURE [dbo].[getPost]
+          @ID int
+     AS
+     BEGIN
+          SELECT
+               POS.ID,
+               POS.title,
+               ATH.realName AS 'realName',
+               ATH.image AS 'avatar'
+          FROM
+               posts   AS POS
+               INNER JOIN authors AS ATH ON POS.authorID = ATH.ID
+          WHERE
+               POS.ID = @ID
+          ORDER BY
+               POS.ID DESC
+     END
+
+AS kullanmak "bu sekilde isimlendir" demek oluyor. Mesela yaptigim 3 harfli kisaltmalar 
+INNER JOIN sirasinda yaptigim birlestirmeler arttikca daha yararli oluyor.

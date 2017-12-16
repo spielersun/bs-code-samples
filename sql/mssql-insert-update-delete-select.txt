@@ -1,0 +1,44 @@
+INSERT INTO
+   posts
+   (
+      title,
+      question,
+      answer
+   )
+SELECT
+   'mssqlde temel ifadeler',
+   'nasil',
+   'boyle'
+
+
+UPDATE 
+   posts
+SET
+   title = 'eskide kaldi',
+   question = 'hala kullanan var mi',
+   answer = 'evet galiba'
+WHERE
+   ID = 1
+
+
+DELETE FROM
+   posts
+WHERE 
+   ID = 1
+
+
+SELECT
+   ID,
+   title,
+   question,
+   answer
+FROM
+   posts
+WHERE
+   ID = 1
+
+
+SELECT
+   *
+FROM
+   posts
