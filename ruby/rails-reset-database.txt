@@ -1,0 +1,25 @@
+Tum icerigi silip, yaptiginiz migration lara gore yeni veritabani olusturmak icin:
+rake db:drop db:create db:migrate db:seed
+
+Veritabanini "schema.rb" dosyasinda gozuktugu gibi tekrar olusturmak icin:
+rake db:schema:load ya da rake db:reset
+
+Veritabani islemleri:
+db:create - Yeni veritabani olusturur, sadece o anki ortam icin.
+db:create:all - Yeni veritabani olusturur, tum ortamlar icin.
+db:drop - Veritabani kaldirir, sadece o anki ortam icin.
+db:drop:all - Veritabani kaldirir, tum ortamlar icin.
+db:migrate - Calistirilmamis migration lari calistirir, sadece o anki ortam icin.
+db:migrate:up - Tek bir migration i calistirir.
+db:migrate:down - Bir migration geri gider.
+db:migrate:status - O anki migration durumunu gosterir.
+db:rollback - Son migrationa geri gider.
+db:forward - O anki sema versiyonunundan sonrakine gider.
+db:seed - db/seed.rb dosyasini calistirir, yemleme.
+db:schema:load - Guncel semayi veritabanina uygular, sadece o anki ortam icin.
+db:schema:dump - Guncel semayi bosaltir.
+db:setup - db:schema:load ve db:seed islemlerini yapar.
+db:reset - db:drop ve db:setup islemlerini yapar.
+db:migrate:redo - db:migrate:down ve db:migrate:up ya da db:rollback ve db:migrate islemlerini yapar.
+db:migrate:reset - db:drop db:create ve db:migrate islemlerini yapar.
+

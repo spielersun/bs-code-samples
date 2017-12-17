@@ -1,0 +1,38 @@
+Sayfanin kendisi: public/giris.html
+
+<html>
+     <head>
+          <title>Onay Kutusu iceren Proje</title>
+     </head>
+     <body>
+          <h1>Bilgi Sayamiyorum</h1>
+          <form action = "/giris/onay">
+               Kabul Ediyor Musunuz?<br>
+               <input type="checkbox" name="onaykutusu">Evet<br>
+               <input type="submit"/>
+          </form>
+     </body>
+</html>
+
+VIEW: proje\views\giris\onay.rhtml
+
+<html>
+     <head>
+          <title>Eger "@veri" ye icerik yuklenmisse olumlu sonuc alirsin.</title>
+     </head>
+     <body>
+          <% if @veri %>
+               Kabul Ettin!
+          <% else %>
+               Kabul Etmedin!
+          <% end %>
+     </body>
+</html>
+
+CONTROLLER: proje\controllers\giris_controller.rb
+
+class GirisController < ApplicationController
+     def onay
+          @veri = params[:onaykutusu]
+     end
+end
