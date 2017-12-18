@@ -1,0 +1,2 @@
+std::vector<int> yourVector;
+int* yourArray = &yourVector[0];

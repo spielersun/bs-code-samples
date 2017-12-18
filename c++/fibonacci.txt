@@ -1,12 +1,12 @@
 #include <iostream> 
-using namespace std; // Temel kütüphaneleri çaðýrýyorum
+using namespace std; // Temel kutuphaneleri cagiriyorum
 
 int fib(int x) {
-	if (x == 1 || x == 2) { // Ýstenen fibonacci sayýsý 1 ya da iki ise 1 döndürüyorum
-        	return 1;  // fib(1) e geldiðinde iþlemi sonlandýrdýðým için fib(0) a hiç düþmüyor
+	if (x == 1 || x == 2) { // Istenen fibonacci sayisi 1 ya da iki ise 1 donduruyorum
+        	return 1;  // fib(1) e geldiginde islemi sonlandirdigim için fib(0) a hic dusmuyor
 	} 
-        else { // Fonksiyon tamamen bitmeden içine baþka fonksiyon çaðýrýyorum
-            	return fib(x-1)+fib(x-2);  // Sayýlar 1 veya 2 ye ulaþana kadar bu devam ediyor
+        else { // Fonksiyon tamamen bitmeden icine baska fonksiyon cagiriyorum
+            	return fib(x-1)+fib(x-2);  // Sayilar 1 veya 2 ye ulasana kadar bu devam ediyor
         }
 }
 
