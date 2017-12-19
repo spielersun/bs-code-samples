@@ -1,0 +1,37 @@
+#include <stdio.h>
+#define MAX 10
+
+void main()
+{
+     int liste[MAX];
+     int i, k, toplam, eleman;
+
+     printf("Kac sayili bir liste olacak? \n");
+     scanf("%d", &toplam);
+     printf("Sayilari tek tek girin. \n");
+
+     for (i = 0; i < toplam; i++){
+          scanf("%d", &liste[i]);
+     }
+
+     printf("Verdiginiz Sayilar: \n");
+
+     for (i = 0; i < toplam; i++){
+          printf("%d\n", liste[i]);
+     }
+
+     for (i = 0; i < toplam; i++){
+          for (k = 0; k < (toplam - i - 1); k++){
+               if (liste[k] > liste[k + 1]){
+                    eleman = liste[k];
+                    liste[k] = liste[k + 1];
+                    liste[k + 1] = eleman;
+               }
+          }
+     }
+     printf("Sirali Liste:\n");
+
+     for (i = 0; i < toplam; i++){
+          printf("%d\n", liste[i]);
+     }
+}
