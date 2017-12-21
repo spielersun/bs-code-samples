@@ -1,0 +1,19 @@
+html:
+<table id="ortaokul">
+  <tbody>
+    <tr><td>osman</td><td>ilayda</td></tr>
+    <tr><td>emre</td><td>burcu</td></tr>
+  </tbody>
+</table>
+
+js:
+// Adding a row, 4 different ways
+$('#ortaokul tr:last').after('<tr><td>kemal</td><td>ceren</td></tr>');
+$("#ortaokul > tbody").append("<tr><td>kemal</td><td>ceren</td></tr>");
+$('#ortaokul > tbody:last-child').append('<tr><td>kemal</td><td>ceren</td></tr>');
+$('#ortaokul ').find('tbody:last').append('<tr><td>kemal</td><td>ceren</td></tr>');
+
+// Adding a row that contains a span and an image
+$("#ortaokul").find('tbody')
+  .append($('<tr>').append($('<td>').append("kemal")))
+  .append($('<tr>').append($('<td>').append($('<img>').attr('src', 'img.png').text('Image cell'))));
