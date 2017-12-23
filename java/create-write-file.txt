@@ -1,0 +1,10 @@
+/* Before Java7 */
+PrintWriter yazici = new PrintWriter("yazilar.txt", "UTF-8");
+yazici.println("Yolların onu nereye getirdiğini düşündü Ceyda,");
+yazici.println("Zaten hiçbir zaman yürümeyi sevmemişti.");
+yazici.close();
+
+/* Java7+ */
+List<String> satirlar = Arrays.asList("Hikayelerin neresinde olduğu önemsizdi,", "Rollerden olduolası hoşlanmazdı.");
+Path dosya = Paths.get("hikaye.txt");
+Files.write(dosya, satirlar, Charset.forName("UTF-8"));
