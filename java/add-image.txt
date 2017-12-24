@@ -1,0 +1,58 @@
+/* Short Version */
+import java.awt.Graphics;
+import java.awt.Panel;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+public class ResimGoster extends Panel {
+     private static final long serialVersionUID = 1L;
+     private BufferedImage gorsel;
+
+     public ResimGoster(String gorselyolu) {
+          try {
+               gorsel = ImageIO.read(new File(gorselyolu));
+          } catch (IOException ie) {
+               ie.printStackTrace();
+          }
+     }
+
+     public void paint(Graphics g) {
+          g.drawImage(gorsel, 0, 0, null);
+     }
+
+     static public void main(String args[]) throws Exception {
+          JFrame cerceve = new JFrame("ResimGoster.java");
+          Panel ekran = new ResimGoster(args[0]);
+          cerceve.getContentPane().add(ekran);
+          cerceve.setSize(800, 640);
+          cerceve.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+          cerceve.setVisible(true);
+     }
+}
+
+/* Shorter Version */
+import java.awt.Graphics;
+import java.awt.Panel;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.JFrame;
+public class ResimGoster extends Panel {
+  static public void main(String args[]) throws Exception {
+    Image gorsel = null;
+    URL adres = new URL("http://www.bilgisayamiyorum.com/images/logo.jpg");
+    gorsel = ImageIO.read(adres);
+    
+    JFrame cerceve = new JFrame();
+    JLabel resimGosterici = new JLabel(new ImageIcon(gorsel));
+    JPanel anapanel = new JPanel(new BorderLayout());
+    anapanel.add(resimGosterici);
+    cerceve.add(anapanel);
+
+    cerceve.setSize(800, 640);
+    cerceve.setVisible(true);
+  }
+}
