@@ -1,0 +1,11 @@
+# 3 seconds
+sleep 3
+
+# Half a second
+sleep(0.5)
+
+# 7 minutes
+sleep(7.minutes)
+
+# 12 hours
+sleep(12.hours)
