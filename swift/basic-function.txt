@@ -1,0 +1,20 @@
+func kimdir(isim:String, soyisim:String){
+     print("Ooo \(isim) \(soyisim) de burdaymis!")
+     return
+}
+
+kimdir(isim:"Farrokh", soyisim:"Bulsara")
+
+
+func ortalamaAl(puanlar:[Float]) -> Float{
+     var toplam:Float = 0
+     var uzunluk:Float = 0
+     for puan in puanlar{
+          toplam+=puan
+          uzunluk += 1
+     }
+     return toplam / uzunluk
+}
+
+let sonuc = ortalamaAl(puanlar:[57.5, 32.5, 60, 95, 12.5, 35, 57.5])
+print(sonuc)

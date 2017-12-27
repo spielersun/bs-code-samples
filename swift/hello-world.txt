@@ -1,0 +1,14 @@
+func merhaba() {
+     print("Hoo! Ismail Abi!")
+     return
+}
+
+merhaba()
+
+
+func merhaba2() -> String{
+     return "Merhaba Dunya! Ben de buradayim ve ses verebiliyorum."
+}
+
+let goster = merhaba2()
+print(goster)
