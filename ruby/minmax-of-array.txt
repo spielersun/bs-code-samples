@@ -1,0 +1,18 @@
+# int array
+[7, 3, 5, 11, 12].min
+[2, 7, 4, 1, 9].max
+[2, 4, 9, 3, 14, 21, 11].max(2)
+
+# min & max togetger
+[2, 4, 9, 3, 14, 21, 11].minmax
+# result: [2, 21] 
+
+# string array; alphabetical order is the sorting criteria
+[ali, ilayda, mert, osman, ceren, yaren].minmax 
+# result: [ali, yaren]
+
+# string array; length as the sorting criteria
+array = %w(ali, ilayda, mert, osman, ceren, yaren)
+array.max_by { |x| x.length }
+array.min_by(2) {|x| x.length }
+
