@@ -1,0 +1,14 @@
+def yerDegistirme(liste, eskiEleman, yeniEleman):
+  transporter = liste[eskiEleman]
+  liste[eskiEleman] = liste[yeniEleman]
+  liste[yeniEleman] = transporter
+
+def selectionSort(liste):
+  for i in range(len(liste)):
+    enKucuk = min(liste[i:])
+    enKucukEleman = liste[i:].index(enKucuk)
+    yerDegistirme(liste,i,i + enKucukEleman)
+
+rakamlarListe = [9,3,7,4,8,0,2,5,1,6]
+selectionSort(rakamlarListe)
+print(rakamlarListe)
