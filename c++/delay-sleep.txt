@@ -1,0 +1,21 @@
+// Chrono Library
+#include <chrono>
+#include <thread>
+int main(){
+  std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+}
+
+// Windows Library
+#include "iostream"
+#include "windows.h"
+int main(){
+  Sleep(1000);
+  return 0;
+}
+
+// Just Pause Program
+#include "iostream"
+int main(){
+  system("pause");
+  return 0;
+}
