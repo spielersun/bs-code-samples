@@ -1,0 +1,13 @@
+#include <iostream>
+#include <ctime>
+
+void bekle(int saniye){
+  std::clock_t bitti;
+  bitti = std::clock () + saniye * CLK_TCK;
+  while (std::clock() < bitti) {
+  }
+}
+int main(){
+  bekle(7);
+  return 0;
+}
