@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int boyut = 5;
+
+struct student{
+     int numara;
+     float kapasite;
+     char isim[50];
+} stadlar[boyut];
+
+/* Ardindan ana fonksiyon icerisinde stad bilgilerini tek tek alan (numara kendiliginden artiyor) bir for dongusu yaziyoruz. Ardindan bu icerikleri listeleyen baska bir for dongusu. Bunlar "stadlar" listesinin boyutu kadar ilerliyorlar: */
+
+int main(){
+     cout << "Stad bilgilerini giriniz: " << endl;
+
+     for(int k = 0; k < boyut; ++k){
+          stadlar[k].numara = k+1;
+
+          cout << "numarası:" << stadlar[k].numara << "," << endl;
+          cout << "kapasitesi: ";
+          cin >> stadlar[k].kapasite;
+          cout << "isim: ";
+          cin >> stadlar[k].isim;
+
+          cout << endl;
+     }
+
+     cout << "Girdiginiz icerikler: " << endl;
+
+     for(int k = 0; k < boyut; ++k){
+          cout << "\nnumara: " << stadlar[k].numara << endl;
+          cout << "kapasite: " << stadlar[k].kapasite << endl;
+          cout << "isim: " << stadlar[k].isim << endl;
+     }
+     return 0;
+}
