@@ -1,0 +1,15 @@
+// using unzip
+apt-get install unzip
+unzip /dosya/osman.zip -d /dosya/burayakoy/
+
+// using unzip, to current directory
+unzip /dosya/osman.zip
+
+// using 7zip; "l" just for listing, "x" for nested unzip, "e" for flatten unzip
+sudo apt-get install p7zip-full
+7z l osman.zip
+7z x osman.zip
+7z e osman.zip
+
+// unzip everything in this file
+find -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;
