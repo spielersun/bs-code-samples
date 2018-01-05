@@ -1,0 +1,17 @@
+// Disk Usage in 1Ks
+df
+
+// Disk Usage, human readable
+df -h
+
+// Disk Usage with Total row, human readable
+df -h --total
+
+// Disk Usage, limit to local
+df -l
+
+// For More Info
+man df
+
+// Alternative
+gnome-system-monitor

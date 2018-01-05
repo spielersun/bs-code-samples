@@ -1,0 +1,7 @@
+// change user to charlotte
+su -charlotte
+
+// make your own starter
+sudo apt-get install gksu
+gksu -u charlotte /usr/bin/x-terminal-emulator
+
