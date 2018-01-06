@@ -1,0 +1,41 @@
+// Increasing Numbers
+#include<iostream>
+using namespace std;
+int faktHesapla(int n);
+
+int main(){
+     unsigned int n;
+     cout << "Lutfen pozitif bir sayi girin: ";
+     cin >> n;
+     cout << n << " sayısının faktoriyeli: " << faktHesapla(n);
+     return 0;
+}
+
+int faktHesapla(int n){
+     unsigned long long fakt = 1;
+     for(int i = 1; i <=n; ++i){
+          fakt *= i;
+     }
+     return fakt;
+}
+
+// Decreasing Numbers
+#include<iostream>
+using namespace std;
+int faktHesapla(int n);
+
+int main(){
+     unsigned int n;
+     cout << "Lutfen pozitif bir sayi girin: ";
+     cin >> n;
+     cout << n << " sayısının faktoriyeli: " << faktHesapla(n);
+     return 0;
+}
+
+int faktHesapla(int n){
+     if(n > 1){
+          return n * faktHesapla(n - 1);
+     } else{
+          return 1;
+     }
+}
