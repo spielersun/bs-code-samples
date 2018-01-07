@@ -1,0 +1,13 @@
+HTML:
+<input type="checkbox" id="onayKutusu"/>
+
+JQUERY:
+$('#onayKutusu').prop('checked', true);
+$('#onayKutusu').prop('checked', false);
+
+CHECK INPUT VALUE:
+$('#onayKutusu').is(':checked')
+
+OLDER JQUERY:
+$('#onayKutusu').attr('checked', true);
+$('#onayKutusu').attr('checked', false);
