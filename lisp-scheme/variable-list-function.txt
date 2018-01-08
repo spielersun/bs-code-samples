@@ -1,0 +1,12 @@
+// Variables
+(define sayi 200)
+(define isim "osman")
+
+// Structures, Lists
+(define degerler(sayi isim top))
+(define top(circle 20 "solid" "red"))
+(define listemiz(list 5 21 45)
+
+// Function
+(+ 5 w)
+(define (devam w) (+ 5 w))
