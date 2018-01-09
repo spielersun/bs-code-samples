@@ -1,0 +1,23 @@
+public class Bulucu{
+     public static void main(String[] args)
+     {
+          kucukBulucu yeniProgram = new kucukBulucu(); 
+          int[] liste = {8,19,6,7,10,5,12,5,21}; 
+          int altListeninKucugu = yeniProgram.kucukBul(liste, 2, 6); 
+          System.out.print(altListeninKucugu); 
+     }
+}
+
+
+public class kucukBulucu{
+     public int kucukBul(int[]altListe, int baslangic, int bitis){
+          int enKucukNerde = baslangic;
+          for(int i = baslangic; i <= bitis; i++){ 
+               if(altListe[i] < altListe[enKucukNerde]){
+                    enKucukNerde = i; 
+               }
+          }
+          return enKucukNerde;
+     }
+
+}
