@@ -1,38 +1,33 @@
-// Ýlk önce "main" fonksiyonu dahilinde kullanýcýdan 2 pozitif sayý istiyoruz, ikincisi ilkinden büyük olacak. Sonra o iki sayý arasýnda bir "for" loop u oluþturup, küçük sayýdan büyüðüne doðru her sayýyý asal mý deðil mi diye kontrol ederek gidiyoruz. Her asal olaný bulduðumuzda 
+#include <iostream>
+using namespace std; 
 
-#include <iostream> // IO iþlemleri kütüphanesi
-using namespace std; // Standart kütüphane
+int asalKontrolEdici(int); 
 
-int checkPrimeNumber(int); // Template olarak koyuyoruz, nasýl çalýþtýðýný daha sonra belirleyeceðiz
+int main(){ 
+	int n1, n2; 
+        bool asalMi; 
 
-int main(){ // C++ da her zaman bir main olmalý
-	int n1, n2; // Kullanýcýdan isteyeceðimiz sayýlar
-        bool isPrime; // Asal olunup olunmadýðýný taþýyacaðýmýz deðiþken
-
-        cout << "Lütfen iki pozitif sayý girin: ";
+        cout << "LÃ¼tfen iki pozitif sayi girin: ";
         cin >> n1 >> n2;
-        cout <<  n1 << " ile " << n2 << " arasýndaki asal sayýlar: ";
+        cout <<  n1 << " ile " << n2 << " arasindaki asal sayilar: ";
 
-        for(int i = n1+1; i < n2; ++i){ // "i" eðer asal ise onu yazdýr
-             	isPrime = checkPrimeNumber(i);
-               	if(isPrime) { 
+        for(int i = n1+1; i < n2; ++i){
+             	asalMi = asalKontrolEdici(i);
+               	if(asalMi) { 
                     	cout << i << " ";
-
 		}        
 	}
         return 0;
 }
 
-// Aþaðýda da bir sayýnýn asal olup olmadýðýný kontrol eden fonksiyonu yazýyoruz. Bu iþlemi de sayýyý, 2 den baþlayýp o sayýnýn yarýsýna kadar olan her sayýya bölerek yapýyoruz. Çünkü matematiksel olarak bire bölünmesini saymýyoruz ve bir tam sayýya bölündüðünde yarýsýndan daha büyük bir sonuç çýkma ihtimali olmadýðýný biliyoruz. "isPrime" bu iþlemin sonucunu attýðýmýz evet/hayýr içeren deðiþken. 
+bool asalKontrolEdici(int n){
+	bool asalMi = true;
 
-int checkPrimeNumber(int n){
-	bool isPrime = true;
-
-        for(int j = 2; j <= n/2; ++j){
+	for(int j = 2; j <= n/2; ++j){
             	if (n%j == 0){ 
-                 	isPrime = false;
+                 	asalMi = false;
                     	break;
              	}
    	}
-        return isPrime;
+        return asalMi;
 }
