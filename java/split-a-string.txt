@@ -1,0 +1,29 @@
+String gizliUUID = "92290df5-e45c-4014-82f1-9fc9b04fe3e9";
+
+// Check availability
+if (gizliUUID.contains("-")) {
+     // Burada islem yapilacak.
+} else {
+     // Burada string o isareti icermedigi icin hata dondurulecek.
+}
+
+String[] parcalarListesi = gizliUUID.split("-");
+
+String ilkParca = parcalarListesi[0];
+String ikinciParca = parcalarListesi[1];
+String ucuncuParca = parcalarListesi[2];
+String dorduncuParca = parcalarListesi[3];
+String besinciParca = parcalarListesi[4];
+
+// Split with limit
+String[] parcalarListesi = gizliUUID.split("-", 3);
+
+// Take the remainder
+String[] parcalarListesi = gizliUUID.split("(?<=-)"); // - isareti soldaki parcada kalir.
+String[] parcalarListesi = gizliUUID.split("(?=-)"); // - isareti sagdaki parcada kalir.
+
+// Split with metacharacters
+String[] parcalarListesi = gizliUUID.split("\\+");
+String[] parcalarListesi = gizliUUID.split("[+]");
+String[] parcalarListesi = gizliUUID.split(Pattern.quote("+"));
+
