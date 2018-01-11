@@ -1,0 +1,38 @@
+# Toplama
+def add(x, y):
+  return x + y
+
+# Cikarma
+def subtract(x, y):
+  return x - y
+
+# Carpma
+def multiply(x, y):
+  return x * y
+
+# Bolme
+def divide(x, y):
+  return x / y
+
+print("Islemler")
+print("1) Toplama")
+print("2) Cikarma")
+print("3) Carpma")
+print("4) Bolme")
+
+# Kullanicidan degerleri aliyoruz
+choice = input("Hangi islemi yapacaksiniz, (1/2/3/4):")
+
+num1 = int(input("Ilk sayiyi girin: "))
+num2 = int(input("Ikinci sayiyi girin: "))
+
+if choice == '1':
+  print(num1," + ",num2," = ", add(num1,num2))
+elif choice == '2':
+  print(num1," - ",num2," = ", subtract(num1,num2))
+elif choice == '3':
+  print(num1," * ",num2," = ", multiply(num1,num2))
+elif choice == '4':
+  print(num1," / ",num2," = ", divide(num1,num2))
+else:
+  print("Gecersiz Islem")
