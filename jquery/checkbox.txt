@@ -1,13 +1,13 @@
 HTML:
-<input type="checkbox" id="onayKutusu"/>
+<input type="checkbox" id="checkBoxID"/>
 
 JQUERY:
-$('#onayKutusu').prop('checked', true);
-$('#onayKutusu').prop('checked', false);
+$('#checkBoxID').prop('checked', true);
+$('#checkBoxID').prop('checked', false);
 
 CHECK INPUT VALUE:
-$('#onayKutusu').is(':checked')
+$('#checkBoxID').is(':checked')
 
 OLDER JQUERY:
-$('#onayKutusu').attr('checked', true);
-$('#onayKutusu').attr('checked', false);
+$('#checkBoxID').attr('checked', true);
+$('#checkBoxID').attr('checked', false);

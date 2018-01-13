@@ -1,6 +1,5 @@
-// Elimizde "list" id sine sahip bir "ul" oldugunu dusunelim. 
-// Bu "ul" nin her "li" sine tiklandiginda o "li"nin icindeki 
-// "span" elementlerinin gorunur olmasini istiyorum
+// Every list item of the unordered list will ve clickable
+// They will show their own "span"s
 
 $('ul#list li').live('click', function (e) {
 	e.preventDefault();

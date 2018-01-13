@@ -1,13 +1,13 @@
-// 1. Yol: URLde #konumlayýcý var ise kullanmayin
+// 1. Yol: DON'T use if URL has "#<place>"
 window.location.href = window.location.href; 
 
-// 2. Yol: En temizi (: reload(true) yaparsaniz sunucudan yuklemeye bile calisir sayfayi
+// 2. Yol: Cleanest Way (: if you'll make "reload(true)" it will try to reload from the server
 window.location.reload(); 
 
-// 3. Yol: Aynisi ama biraz havali
+// 3. Yol: Same but different
 history.go(0); 
 
-// Ornek
-$('#osman').click(function() {
+// Example
+$('#linkID').click(function() {
 	location.reload(true);
 });
