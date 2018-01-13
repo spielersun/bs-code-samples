@@ -1,0 +1,10 @@
+// Local Branch
+git checkout sabitBranch
+git branch -d silinecekBranch
+
+// Remote Master (origin)
+git push origin :silinecekBranch
+git push origin --delete silinecekBranch
+
+// All Clients (clean-up)
+git fetch --all --prune
