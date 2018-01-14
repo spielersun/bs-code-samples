@@ -1,0 +1,25 @@
+using System;
+using System.IO;
+
+class directoryCreator{
+	public static void Main(){
+		string path = @"<newDirectoryPath>";
+          	try {
+	       		// Check If Exists
+               		if (Directory.Exists(path)) {
+                    		Console.WriteLine("Already Exists.");
+                    		return;
+               		} 
+			// If Not
+               		DirectoryInfo directoryInfo = Directory.CreateDirectory(path);
+               		Console.WriteLine("It's Done.");
+          	} catch (Exception e) {
+               		Console.WriteLine("ERROR: {0}", e.ToString());
+          	} 
+          	finally {}
+     	}
+}
+
+// To Delete Existing Directory
+directoryInfo.Delete();
+Console.WriteLine("It's gone.");
