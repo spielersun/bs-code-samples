@@ -1,12 +1,9 @@
-// Kütüphaneler; getline ve string için gerekli olan string kütüphanesi ve bu okuma iþleri için fstream ve sstream kütüphaneleri.
-// Diyelim ki "akaretler.txt" adýnda bir yazý dosyasýna sahipsiniz diyelim ve bunu satýr satýr okumak istiyorsunuz:
-
 #include <fstream>
 #include <sstream>
 #include <string>
 
-std::ifstream girdi("akaretler.ext");
+std::ifstream dataToRead("akaretler.txt");
 
-for(std::string satir; getline(girdi, satir);) {
-     // Buraya iþlemler gelecek
+for(std::string everyLine; getline(dataToRead, everyLine);) {
+     // Do Something...
 }

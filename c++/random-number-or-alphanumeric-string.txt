@@ -1,0 +1,32 @@
+// Pseude Random Number
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+     srand(time(NULL));
+     oneToTen = rand() % 10 + 1;
+     oneToHundred= rand() % 100 + 1;
+
+     printf ("Random Number: %d\n", oneToTen);
+     return 0;
+}
+
+// Pseude Random Alphanumeric String (16 Chars)
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+using namespace std;
+
+int main() {
+     static const string charList = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+     srand(time(NULL));
+     string randomAlphanumeric = "";
+
+     for(int i = 0; i < 16; i++) {
+          randomAlphanumeric += charList[rand() % charList.size()];
+     }
+
+     cout << "Random Alphanumeric String: " << randomAlphanumeric << endl;
+     return 0;
+}
