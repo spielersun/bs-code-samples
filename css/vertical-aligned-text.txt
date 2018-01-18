@@ -1,0 +1,73 @@
+1. HTML:
+<p>Binlerce savaşı kazanmak için savaşmak yerine kendinizi fethetmeyi deneyin. Zafer, sizsiniz.</p>
+
+1. CSS:
+p {
+     width: 200px;
+     height: 200px;
+     padding: 10px;
+     font-size:24px;
+     text-align:center;
+     background-color: orange;
+     position: absolute;
+     top:0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+}
+
+2. HTML:
+<p>Uyanmak!</p>
+
+2. CSS:
+div {
+     height: 100px;
+     line-height: 100px;
+     text-align: center;
+     background-color: orange;
+}
+
+3. HTML:
+<div><p>Binlerce savaşı kazanmak için savaşmak yerine kendinizi fethetmeyi deneyin. Zafer, sizsiniz.</p></div>
+
+3. CSS:
+div {
+     height: 200px;
+     line-height: 200px;
+     text-align: center;
+     background-color: orange;
+}
+p {
+     display: inline-block;
+     vertical-align: middle;
+     line-height: normal;
+}
+
+4. HTML:
+<div><p>Binlerce savaşı kazanmak için savaşmak yerine kendinizi fethetmeyi deneyin. Zafer, sizsiniz.</p></div>
+
+4. CSS:
+div {
+     display: table;
+     height: 100px;
+     width: 100%;
+     text-align: center;
+     background-color: orange;
+}
+p {
+     display: table-cell;
+     vertical-align: middle;
+}
+
+4. Alternative CSS: 
+div {
+     width: 200px;
+     height: 100px;
+     background-color: orange
+     margin: 0px;
+     padding: 0px;
+     text-align: center;
+     display: table-cell;
+     vertical-align:middle;
+}
