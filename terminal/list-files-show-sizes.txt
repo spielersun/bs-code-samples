@@ -1,0 +1,14 @@
+// List Files
+ls -l
+ls -lh
+ls -lhR
+
+// Show File Sizes
+du /home/belgeler
+du --block-size=3M 
+du -hs /home/belgeler
+du -h --max-depth=1 /home/belgeler | sort -nk1
+du -d 0 -hc z*
+
+// Alternate
+apt-get install ncdu
