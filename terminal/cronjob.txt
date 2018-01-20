@@ -1,0 +1,33 @@
+// dalek.sh:
+#!/bin/sh
+echo "Hi Dalek!"
+
+// Cronjob Files:
+/etc/cron.hourly
+/etc/cron.daily
+/etc/cron.weekly
+/etc/cron.monthly
+
+// Custom Cronjob:
+crontab -e
+
+// Time and Script
+minute hour day month weekday scriptPath
+* * * * * /scriptPath
+
+15 14 * * 2 /usr/lib/dalek.sh
+*/20 * * * * /usr/lib/dalek.sh
+@reboot /usr/lib/dalek.sh
+
+* 12 * * * root /usr/lib/dalek.sh
+0 1,6,13,18 * * * userName /usr/lib/dalek.sh
+
+// Time Intervals
+Minute, 0-59 
+Hour, 0-23
+Day, 0-31
+Month, 0-12
+Weekday, 0-6 (0:Sunday)
+
+
+
