@@ -1,0 +1,41 @@
+// Delete a file 
+import os
+os.unlink(path, *, dir_fd=None)
+os.remove(path, *, dir_fd=None)
+
+// Delete this file
+import os
+os.remove(path)
+os.remove('/tmp/deleteThis.txt')
+
+// Delete this type of files
+import os, glob
+os.remove(glob('/tmp/deleteTexts/*.txt'))
+
+// Remove an empty directory
+import os
+os.rmdir("/tmp/bosDizin")
+
+// Remove a directory
+import shutil
+shutil.rmtree("/tmp/doluDizin")
+
+// Delete this whole path, if it is possible up to the root
+os.removedirs("/tmp/doluDizin")
+
+// Check it is a file or directory
+os.path.isfile("/tmp/kontrolEt")
+os.path.isdir("/tmp/kontrolEt")
+
+// Delete contents of a directory
+import os, shutil
+directory = '/tmp/deleteThese'
+for everyFile in os.listdir(directory):
+     path = os.path.join(directory, everyFile)
+     try:
+          if os.path.isfile(path):
+               os.remove(path)
+          elif os.path.isdir(path): 
+               shutil.rmtree(path)
+     except Exception as error:
+          print(error)
