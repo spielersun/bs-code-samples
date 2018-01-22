@@ -1,0 +1,16 @@
+<audio src="lotusFlower.ogg" controls="controls">
+   Your browser doesn't support this!
+</audio>
+
+<!--
+src : source
+autobuffer : (true/false) buffer automatically
+autoplay : (true/false) play automatically
+loop : (true/false) loop audio
+controls : control buttons (default : controls)
+-->
+
+<audio autoplay="autoplay" controls="controls">
+   <source src="lotusFlower.ogg" />
+   <source src="lotusFlower.mp3" />
+</audio>

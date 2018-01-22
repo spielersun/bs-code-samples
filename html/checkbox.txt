@@ -1,0 +1,17 @@
+<input id="ckbMail" type="checkbox" name="mailing" value="Mail"/>
+<input id="ckbMail" type="checkbox" name="mailing" value="Mail" checked="checked"/>
+
+<form action="send">
+	<input type="checkbox" name="vehicle" value="mac" />I own a MAC<br />
+	<input type="checkbox" name="vehicle" value="pc" />I own a PC
+</form>
+
+<form action="../bin/cream.json">
+	<input type="checkbox" name="fruit"/>Apple<br />
+	<input type="checkbox" name="vehicle"/> Pc sahibiyim<br />
+	<input type="checkbox" name="vehicle"/> Pc sahibiyim<br />
+	<input type="checkbox" name="vehicle"/> Pc sahibiyim<br />
+	<input type="submit" valur="submit"/>
+</form>
+
+<asp:CheckBox ID="ckbMail" runat="server" />
