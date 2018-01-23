@@ -1,0 +1,19 @@
+// Find Apache
+dpkg --get-selections | grep apache
+
+// Details
+sudo lsof -nPi | grep ":80 (LISTEN)"
+sudo service apache2 status
+
+// Apache Modules
+apache2ctl -M
+a2query -m 
+apachectl -m
+/usr/sbin/httpd -M
+httpd -M
+
+// Reload & Restart
+sudo /etc/init.d/apache2 reload
+apache2ctl -k stop
+apache2ctl -k graceful
+apache2ctl -k restart
