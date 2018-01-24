@@ -1,0 +1,9 @@
+// Almost same, endline forces a flush
+std::cout << "Lord of the Flies" << std::endl;
+std::cout << "Lord of the Flies\n";
+
+// Alternatively
+std::cout << "Lord of the Flies\n" << std::flush;
+
+// Just for Errors
+std::cerr << "The Idiot";
