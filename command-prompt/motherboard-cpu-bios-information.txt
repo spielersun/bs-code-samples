@@ -1,0 +1,8 @@
+// Motherboard Information
+wmic baseboard get product,Manufacturer,version,serialnumber
+
+// CPU Information
+wmic cpu get name,description,CurrentClockSpeed,MaxClockSpeed
+
+// Bios Information
+wmic bios get name,serialnumber,version
