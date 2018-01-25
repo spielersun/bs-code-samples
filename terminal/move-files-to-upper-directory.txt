@@ -1,0 +1,12 @@
+// Move 
+mv fileToMove targetPath
+
+// Move all the files in this directory to the upper directory
+mv * .[^.]* ..
+
+// Alternative I
+shopt -s dotglob
+mv -- * ..
+
+// Alternative II
+find . -mindepth 1 -maxdepth 1 -exec mv -t.. -- {} +
