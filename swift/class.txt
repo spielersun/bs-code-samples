@@ -1,0 +1,23 @@
+class Gamer {
+     var name: String?
+     var number: Int = 0
+     static var all = [Gamer]()
+
+     class var secret: Int { 
+          return 77
+     }
+     func profile() -> String {
+          return "I'm \(self.name) & my number is \(self.number)."
+     }
+     class func sum() {
+          print("There are \(all.count) registered gamers.")
+     }
+}
+
+Gamer.sum()
+var luke = Gamer()
+luke.name = "luke starkiller"
+luke.number = 1
+Gamer.all.append(luke)
+
+Gamer.sum()
