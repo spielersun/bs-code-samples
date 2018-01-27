@@ -1,0 +1,14 @@
+sudo apt install speedtest-cli
+speedtest-cli
+speedtest-cli --bytes
+speedtest-cli --share
+speedtest-cli --list > results.txt 
+speedtest-cli --server serverID
+
+
+sudo apt-get install nload
+nload
+nload devices
+nload networkInterface
+nload -m networkInterface anotherNetworkInterface
+nload -u m networkInterface 
