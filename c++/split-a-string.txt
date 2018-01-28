@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+const vector<string> wordSeparator(const string& given, const char& splitterChar){
+     string wordCreator{""};
+     vector<string> resultVector;
+
+     for(auto anyChar:given){
+          if(anyChar != splitterChar){
+               wordCreator += anyChar;
+          } else if(anyChar == splitterChar && wordCreator != ""){ 
+               resultVector.push_back(wordCreator); 
+               wordCreator = ""; 
+          }
+     }
+
+     if(wordCreator != ""){
+          resultVector.push_back(wordCreator);
+     }
+
+     return resultVector;
+}
+
+int main(){
+     string quote{"The mind is everything what you think you become"};
+     vector<string> endVector{wordSeparator(quote, ' ')};
+
+     for(auto word:endVector){
+          cout << word << endl;
+     }
+
+     return 0;
+}
