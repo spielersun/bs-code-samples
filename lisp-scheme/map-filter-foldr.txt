@@ -1,0 +1,17 @@
+((lambda (x y) (+ x y)) 1 2
+>3
+
+((lambda x (car x)) 1 2 3)
+>1
+
+(map (lambda (x) (+ x 2)) '(2 4 7))
+>(4 6 9)
+
+(filter (lambda (x) (equal? x 3)) '(2 3 4))
+>(3)
+
+(foldr + 0 '(1 2 3))
+>6
+
+(foldr cons '(4) '(1 2 3))
+>(1 2 3 4)
