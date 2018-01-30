@@ -3,17 +3,17 @@
 # mesela "mecnun" kelimesinin hikaye adli bir string icerisinde olup 
 # olmadigina bakacaksiniz:
 
-hikaye = "mecnun ve leylanin hikayesi"
+story = "mecnun ve leylanin hikayesi"
 
-if "mecnun" in hikaye:
+if "mecnun" in story:
 	print("Ay Dede")
 
-if "mecnun" not in hikaye:
+if "mecnun" not in story:
 	print("Ac Dede")
 
-soru = "derdalmaya mi geldin abi"
+question = "derdalmaya mi geldin abi?"
 
-if soru.find("erdal") == -1:
+if question.find("erdal") == -1:
 	print ("bakkal bos")
 else:
 	print ("erdal burda")
