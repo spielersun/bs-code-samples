@@ -1,0 +1,48 @@
+# Basic Function
+x <- 7
+y <- 4
+multiplyNumbers <- function(a, b) {
+     result <- a*b
+     print(paste(a," multiply by ", b, " equals ", result))
+}
+multiplyNumbers(x, y)
+
+# If-Else Statement
+x <- 7
+if(x > 5){
+     1
+} else {
+     0
+}
+
+# This is the same but in one line
+if(x > 5) 1 else 0
+
+# If-Else for vectors
+list = c(3,4,5,6,7)
+ifelse(list>5, 1, 0)
+
+# While Statement
+x <- 7
+while (x > 0) {
+     print(x)
+     x = x-1
+}
+
+# For Statement
+list = c(3,4,5,6,7)
+sumList <- 0
+for (currentNumber in list) {
+     sumList = sumList + currentNumber
+}
+print(sumList)
+
+# Repeat Statement with Break
+x <- 0
+repeat {
+     print(x)
+     x = x+1
+     if (x == 11){
+          break
+     }
+}
