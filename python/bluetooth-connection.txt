@@ -1,0 +1,30 @@
+# RFCOMM Server 
+import bluetooth
+
+server_sock=bluetooth.BluetoothSocket( bluetooth.RFCOMM )  
+
+port = 666  
+server_sock.bind(("",port))   
+server_sock.listen(1)  
+
+client_sock,address = server_sock.accept()  
+print "Kabul edilen baglanti adresi: ",address  
+
+data = client_sock.recv(1024) 
+print "received [%s]" % data 
+
+client_sock.close()  
+server_sock.close()
+
+# RFCOMM Client
+import bluetooth
+
+bd_addr = "A1:B2:C3:00:06:66" 
+port = 666 
+
+sock=bluetooth.BluetoothSocket( bluetooth.RFCOMM ) 
+sock.connect((bd_addr, port)) 
+print "Baðlantý:", sock 
+
+sock.send('Merhaba Dünya') 
+sock.close() 
