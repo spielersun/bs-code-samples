@@ -1,0 +1,21 @@
+for i in range(10):
+     print(i)
+
+for i in range(10):
+     print('i', end='')
+
+
+
+for i in range(10):
+     print('i', end='', flush=True)
+
+for i in range(10):
+     print('i', end='')
+     sys.stdout.flush()
+
+
+
+for i in range(10):
+     print i,
+else:
+     print
