@@ -1,33 +1,33 @@
 #include <iostream>
 using namespace std; 
 
-int asalKontrolEdici(int); 
+int primeController(int); 
 
 int main(){ 
 	int n1, n2; 
-        bool asalMi; 
+        bool isPrime; 
 
-        cout << "Lütfen iki pozitif sayi girin: ";
+        cout << "Please enter two positive numbers: ";
         cin >> n1 >> n2;
-        cout <<  n1 << " ile " << n2 << " arasindaki asal sayilar: ";
+        cout <<  n1 << " and " << n2 << ", prime numbers between these two are: ";
 
         for(int i = n1+1; i < n2; ++i){
-             	asalMi = asalKontrolEdici(i);
-               	if(asalMi) { 
+             	isPrime = primeController(i);
+               	if(isPrime) { 
                     	cout << i << " ";
 		}        
 	}
         return 0;
 }
 
-bool asalKontrolEdici(int n){
-	bool asalMi = true;
+bool primeController(int n){
+	bool isPrime = true;
 
 	for(int j = 2; j <= n/2; ++j){
             	if (n%j == 0){ 
-                 	asalMi = false;
+                 	isPrime = false;
                     	break;
              	}
    	}
-        return asalMi;
+        return isPrime;
 }
