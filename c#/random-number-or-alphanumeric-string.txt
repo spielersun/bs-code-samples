@@ -1,0 +1,23 @@
+// Number
+Random randomGenerator = new Random();
+int randomNumberOne = randomGenerator.Next(0, 11); 
+int randomNumberTwo = randomGenerator.Next(101);
+
+// AlphaNumeric String
+private static string RandomString(int length){
+     const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+     var creator = new StringBuilder();
+     for (var i = 0; i < length; i++){
+          var character = chars[Random.Next(0, chars.Length)];
+          creator.Append(character);
+     }
+     return creator.ToString();
+}
+
+// AlphaNumeric String w/LINQ
+private static Random randomGeneretor = new Random();
+public static string RandomString(int length){
+     const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+     return new string(Enumerable.Repeat(chars, length)
+          .Select(r => r[randomGeneretor.Next(r.Length)]).ToArray());
+}
