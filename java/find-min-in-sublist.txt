@@ -1,23 +1,23 @@
-public class Bulucu{
+public class Finder{
      public static void main(String[] args)
      {
-          kucukBulucu yeniProgram = new kucukBulucu(); 
-          int[] liste = {8,19,6,7,10,5,12,5,21}; 
-          int altListeninKucugu = yeniProgram.kucukBul(liste, 2, 6); 
-          System.out.print(altListeninKucugu); 
+          minFinder newProgram = new minFinder(); 
+          int[] list = {8,19,6,7,10,5,12,5,21}; 
+          int minOfsubList = newProgram.findMin(list, 2, 6); 
+          System.out.print(minOfsubList); 
      }
 }
 
 
-public class kucukBulucu{
-     public int kucukBul(int[]altListe, int baslangic, int bitis){
-          int enKucukNerde = baslangic;
-          for(int i = baslangic; i <= bitis; i++){ 
-               if(altListe[i] < altListe[enKucukNerde]){
-                    enKucukNerde = i; 
+public class minFinder{
+     public int findMin(int[]subList, int start, int end){
+          int minIndex = start;
+          for(int i = start; i <= end; i++){ 
+               if(subList[i] < subList[minIndex]){
+                    minIndex = i; 
                }
           }
-          return enKucukNerde;
+          return minIndex;
      }
 
 }
