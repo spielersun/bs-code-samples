@@ -1,6 +1,6 @@
 #include <algorithm>
-if ( std::find(vector.begin(), vector.end(), bulunacak) != vector.end() ){
-	bulduk();
+if(std::find(vector.begin(), vector.end(), findThis) != vector.end()){
+	foundIt();
 }else{
-	yok();
+	no();
 }

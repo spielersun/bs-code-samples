@@ -2,7 +2,7 @@
 #include <sstream>
 #include <string>
 
-std::ifstream dataToRead("akaretler.txt");
+std::ifstream dataToRead("preambleToConstitution.txt");
 
 for(std::string everyLine; getline(dataToRead, everyLine);) {
      // Do Something...

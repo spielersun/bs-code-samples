@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+     int satirSayisi, kolonSayisi, ilkListe[100][100], ikinciListe[100][100], toplamListe[100][100], i, j;
+
+     cout << "100den küçük bir satir sayisi giriniz: ";
+     cin >> satirSayisi;
+     cout << "100den küçük bir kolon sayisi giriniz: ";
+     cin >> kolonSayisi;
+
+     cout << endl << "Ilk matrisin elemanlarini giriniz: " << endl;
+     for(i = 0; i < satirSayisi; ++i){
+          for(j = 0; j < kolonSayisi; ++j){
+               cout << "Ilk listenin elemanlari:" << i + 1 << j + 1 << " : ";
+               cin >> ilkListe[i][j];
+          }
+     }
+
+     cout << endl << "Ikinci matrisin elemanlarini giriniz: " << endl;
+     for(i = 0; i < satirSayisi; ++i){
+          for(j = 0; j < kolonSayisi; ++j){
+               cout << "Ikinci listenin elemanlari:" << i + 1 << j + 1 << " : ";
+               cin >> ikinciListe[i][j];
+          }
+     }
+
+     // Toplama
+     for(i = 0; i < satirSayisi; ++i){
+          for(j = 0; j < kolonSayisi; ++j){
+               toplamListe[i][j] = ilkListe[i][j] + ikinciListe[i][j];
+          }
+     }
+     // Sonuclar
+     cout << endl << "Iki matrisi toplamiyla olusan yeni matris: " << endl;
+     for(i = 0; i < satirSayisi; ++i){
+          for(j = 0; j < kolonSayisi; ++j){
+               cout << toplamListe[i][j] << " ";
+               if(j == kolonSayisi - 1){
+                    cout << endl;
+               }
+          }
+     }
+     return 0;
+}

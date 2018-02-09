@@ -5,10 +5,10 @@
 using namespace std;
 
 int main() {
-  int liste[] = { 7, 12, 3, 1, 8, 2, 4 }; 
+  int list[] = {7, 12, 3, 1, 8, 2, 4, 9}; 
   
-  sort (liste, liste+7); 
-  copy(liste, liste+7, ostream_iterator<int>(cout," "));
+  sort (list, list+7); 
+  copy(list, list+7, ostream_iterator<int>(cout," "));
   
   cout << endl;
 }
