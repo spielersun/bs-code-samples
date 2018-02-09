@@ -1,31 +1,31 @@
 public class Insertion{
      public static void main(String[] args){
-          int[] sirasizliste = {42,4,23,16,8,15};
-          insertionSort(sirasizliste);
+          int[] unorderedList = {42,4,23,16,8,15};
+          insertionSort(unorderedList);
      }
 
-     public static void insertionSort(int liste[]){
-          int uzunluk = liste.length;
-          for (int k = 1; k < uzunluk; k++) {
-               int pivot = liste[k];
+     public static void insertionSort(int list[]){
+          int listLength = list.length;
+          for (int k = 1; k < listLength; k++) {
+               int pivot = list[k];
                int i = k-1;
-               while ( (i > -1) && (liste [i] > pivot) ) {
-                    liste[i+1] = liste[i];
+               while ( (i > -1) && (list[i] > pivot) ) {
+                    list[i+1] = list[i];
                     i--;
                }
-               liste[i+1] = pivot;
+               list[i+1] = pivot;
           }
-          sayiListesiYazdir(liste);
+          orderedList(list);
      }
 
-     private static void sayiListesiYazdir(int[] liste) {
-          for (int j = 0; j < liste.length; j++) {
-               if (j + 1 == liste.length){
-                    System.out.print(liste[j] + ")");
+     private static void orderedList(int[] list) {
+          for (int j = 0; j < list.length; j++) {
+               if (j + 1 == list.length){
+                    System.out.print(list[j] + ")");
                }else if(j == 0){
-                    System.out.print("(" + liste[j] + ",");
+                    System.out.print("(" + list[j] + ",");
                }else{
-                    System.out.print(liste[j] + ",");
+                    System.out.print(list[j] + ",");
                }
           }
           System.out.println("\n");

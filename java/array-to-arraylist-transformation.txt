@@ -2,9 +2,9 @@ import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class Hello{
+public class Transformer{
      public static void main(String[] args){
-          ArrayList<Integer> yeniListe = new ArrayList<Integer>(Arrays.asList(5,7,12));
-          System.out.print(yeniListe);
+          ArrayList<Integer> newList = new ArrayList<Integer>(Arrays.asList(5,7,12,3,1));
+          System.out.print(newList);
      }
 }

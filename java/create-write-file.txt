@@ -1,10 +1,10 @@
 ﻿/* Before Java7 */
-PrintWriter yazici = new PrintWriter("yazilar.txt", "UTF-8");
-yazici.println("Yollarin onu nereye getirdigini dusundu Ceyda,");
-yazici.println("Zaten hicbir zaman yurumeyi sevmemisti.");
-yazici.close();
+PrintWriter superbPrinter = new PrintWriter("story.txt", "UTF-8");
+superbPrinter.println("Yollarin onu nereye getirdigini dusundu Ceyda,");
+superbPrinter.println("Zaten hicbir zaman yurumeyi sevmemisti.");
+superbPrinter.close();
 
 /* Java7+ */
-List<String> satirlar = Arrays.asList("Hikayelerin neresinde oldugu onemsizdi,", "Rollerden olduolası hoslanmazdi.");
-Path dosya = Paths.get("hikaye.txt");
-Files.write(dosya, satirlar, Charset.forName("UTF-8"));
+List<String> lines = Arrays.asList("Hikayelerin neresinde oldugu onemsizdi,", "Rollerden olduolası hoslanmazdi.");
+Path file = Paths.get("story.txt");
+Files.write(file, lines, Charset.forName("UTF-8"));
