@@ -1,0 +1,10 @@
+let liste = [4, 8, 15, 16, 23, 42]
+if liste.contains(42) {
+     print("Yes!")
+}
+
+let isimler = ["osman","mehmet","kemal","ziya","brahman","jill"]
+var toFind = "osman"
+if isimler.contains(toFind) {
+     print("Yes!")
+}
