@@ -1,19 +1,19 @@
-var liste = [4,8,15,16,23,42];
+var list = [4,8,15,16,23,42];
 
 // 1. Way: Equals 0
-liste.length = 0;
+list.length = 0;
 
 // 2. Way: Equals 0
-liste = [];
+list = [];
 
 // 3. Way: Cut the list
-liste.splice(0,liste.length);
+list.splice(0,list.length);
 
 // 4. Way: Extract last item and move on
-while(liste.length > 0) {
-     liste.pop();
+while(list.length > 0) {
+     list.pop();
 }
 
 // 5. Way: Create a backup list behind
-var yedekListe= liste;
-liste.length = 0;
+var backupList= list;
+list.length = 0;

@@ -1,16 +1,16 @@
-merhaba.js:
+hello.js:
 var http = require("http");
 var port = 8080;
 
-var icerik = function icerikgetir(istek, cevap) {
-     cevap.writeHead(200, {'Content-Type': 'text/plain'});
-     cevap.write('merhaba, cevap veriyorum!');
-     cevap.end();
+var content = function showContent(request, response) {
+     response.writeHead(200, {'Content-Type': 'text/plain'});
+     response.write('hello, this is my answer!');
+     response.end();
 }
 
-var sunucu = http.createServer(icerik);
-sunucu.listen(port);
+var server = http.createServer(content);
+server.listen(port);
 
 
 command:
-$ node merhaba.js
+$ node hello.js

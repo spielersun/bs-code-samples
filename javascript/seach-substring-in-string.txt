@@ -1,9 +1,9 @@
-var hikaye = "Gecelerini Beren'i arayarak gecirdi Luthien.";
-var aranacak = "Beren";
-if (hikaye.indexOf(aranacak) !== -1) { bisiYap(); }
+// First Way
+var story = "Gecelerini Beren'i arayarak gecirdi Luthien.";
+var toFind = "Beren";
+if (story.indexOf(toFind) !== -1) { doSomething(); }
 
-// Baska bir yol
-
-var hikaye = "Gecelerini Beren'i arayarak gecirdi Luthien.";
-var aranacak = /Beren/;
-aranacak.test(hikaye);
+// Another Way
+var story = "Gecelerini Beren'i arayarak gecirdi Luthien.";
+var toFind = /Beren/;
+toFind.test(story);
