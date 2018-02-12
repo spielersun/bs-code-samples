@@ -12,7 +12,7 @@
 # result: [ali, yaren]
 
 # string array; length as the sorting criteria
-array = %w(ali, ilayda, mert, osman, ceren, yaren)
-array.max_by { |x| x.length }
-array.min_by(2) {|x| x.length }
+nameList = %w(ali, ilayda, mert, osman, ceren, yaren)
+nameList.max_by { |x| x.length }
+nameList.min_by(2) {|x| x.length }
 

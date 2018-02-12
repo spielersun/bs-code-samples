@@ -1,10 +1,10 @@
-class GirisController < ApplicationController
-     def kurabiye_belirle
-          cookies[:isim] = "MURAT"
-          redirect_to :action => "kurabiye_goster"
+class CookieController < ApplicationController
+     def create_cookie
+          cookies[:name] = "MURAT"
+          redirect_to :action => "show_cookie"
      end
-     def kurabiye_goster
-          isim = cookies[:isim]
-          render(:text => "Merhaba #{isim}!")
+     def show_cookie
+          name = cookies[:name]
+          render(:text => "Merhaba #{name}!")
      end
 end
