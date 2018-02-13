@@ -1,0 +1,20 @@
+# www.bs.com/hikaye?sayfa=2 => /hikaye?sayfa=2 
+request.fullpath
+request.original_fullpath
+
+# www.bs.com/hikaye?sayfa=2 => www.bs.com/hikaye?sayfa=2
+request.original_url
+
+# IP
+request.ip
+
+# Meta
+request.headers["Content-Type"]
+request.media_type
+request.cookie_jar
+request.uuid
+request.request_parameters
+
+# Questions
+request.local?
+request.ssl?
