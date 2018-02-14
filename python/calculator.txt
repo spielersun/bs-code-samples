@@ -1,30 +1,30 @@
-# Toplama
+# Addition
 def add(x, y):
   return x + y
 
-# Cikarma
+# Subtraction
 def subtract(x, y):
   return x - y
 
-# Carpma
+# Multiplication
 def multiply(x, y):
   return x * y
 
-# Bolme
+# Division
 def divide(x, y):
   return x / y
 
-print("Islemler")
-print("1) Toplama")
-print("2) Cikarma")
-print("3) Carpma")
-print("4) Bolme")
+print("Algebra")
+print("1) Addition")
+print("2) Subtraction")
+print("3) Multiplication")
+print("4) Multiplication")
 
-# Kullanicidan degerleri aliyoruz
-choice = input("Hangi islemi yapacaksiniz, (1/2/3/4):")
+# Get variables from the User
+choice = input("Which operation?, (1/2/3/4):")
 
-num1 = int(input("Ilk sayiyi girin: "))
-num2 = int(input("Ikinci sayiyi girin: "))
+num1 = int(input("First number: "))
+num2 = int(input("Second number: "))
 
 if choice == '1':
   print(num1," + ",num2," = ", add(num1,num2))
@@ -35,4 +35,4 @@ elif choice == '3':
 elif choice == '4':
   print(num1," / ",num2," = ", divide(num1,num2))
 else:
-  print("Gecersiz Islem")
+  print("ERROR")

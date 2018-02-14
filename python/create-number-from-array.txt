@@ -1,7 +1,7 @@
-liste = [1, 2, 3, 4] ## Sayi listesi 
-liste2 = [4, 62, 0, 7, 3] ## Sayi listesi 2
+list = [1, 2, 3, 4] 
+list2 = [4, 62, 0, 7, 3]
 
-birinci = int("".join(map(str, liste))) ## Liste ogeleri alip mapleyip sonuca yazdir 
-ikinci = int("".join(map(str, liste2))) ## Liste 2 ogeleri alip mapleyip ikinci sonuca yazdir
+firstPart = int("".join(map(str, list))) ## Map the list items end create the first part
+secondPart = int("".join(map(str, list2))) ## Map the list2 items end create the second part
 
-print (birinci, ikinci) ## Sonuclari yanyana bas
+print (birinci, ikinci) ## Merge parts
