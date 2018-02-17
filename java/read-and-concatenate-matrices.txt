@@ -1,31 +1,27 @@
 import java.lang.Math; 
 
-// Java her zaman bir main metodu olmalýdýr ama Class ýn ismi Main olmak zorunda deðil, dosya ismiyle ayný olsa yeterli. Aþaðýdaki Morpheus class ýndan bir tane yeni oluþturup çeþitli parametreler ile içindeki metodlarý kullanýyorum. 
-
 public class Main{
      public static void main(String[]args){
           Morpheus m = new Morpheus();
 
-          System.out.println("Matrix program initialising..."); // Ýçerik olsun diye eklediðim yazýlar
+          System.out.println("Matrix program initialising..."); 
           System.out.println("Testing parameters...");
           System.out.println("Sum of 3+3:");
-          System.out.println(m.add(3,3)); // 3 ve 3 ün toplamýný yazdýrýyorum
+          System.out.println(m.add(3,3));
 
 
           int s[] = {0,1,2,3,4,5,6,7,8,9,10};
           System.out.println("Counting to 11:");
-          m.printArray(s); // Tek boyutlu diziyi yazdýrýyorum
-          int trinity[][] = {{116,114},{105,110},{105,116},{121,33}}; // Yeni bir iki boyutlu dizi oluþturuyorum
-          int neo[][] = {{97,110},{100,101},{114,115},{111,110}}; // Yeni bir iki boyutlu dizi oluþturuyorum
+          m.printArray(s); 
+          int trinity[][] = {{116,114},{105,110},{105,116},{121,33}}; 
+          int neo[][] = {{97,110},{100,101},{114,115},{111,110}}; 
           System.out.println("Ok, who are you:");
-          m.printArray(trinity); // Ýki boyutlu dizilerden birini yazdýrýyorum
+          m.printArray(trinity); 
           System.out.println("Bring him to me:");
 
-          m.printArray(m.sum(neo,trinity)); // Ýki boyutlu dizileri toplayýp, sonucu yazdýrýyorum
+          m.printArray(m.sum(neo,trinity));
      }
 }
-
-// Arayüzün/interface ne olduðunu ve ne iþe yaradýðýný biraz daha Javaya alýþtýkça öðreneceðinizi tahmin ediyorum. Ama genel programlama açýsýndan template gibi düþünebilirsiniz, özellikle burada daha sonra çýktý alacaðýmýz metodlarýn ne ile çalýþtýðýný ve ne sonuç verdiðini gösteriyorlar.
 
 interface IMATH {
      public int add(int a, int b);
@@ -39,30 +35,30 @@ class Morpheus implements IMATH{
           return x + y;
      }
 
-     public void printArray(int a[]){ // Tek boyutlu listeyi yazdýran metod
-          for(int i=0; i<a.length; i++){ // Öðeleri dolaþýyor
+     public void printArray(int a[]){
+          for(int i=0; i<a.length; i++){
                System.out.println(a[i]);
           }
      }
 
-     public void printArray(int a[][]){ // 2 boyutlu listeyi yazdýran metod
-          for(int r=0; r<a.length; r++){ // Satýrlarý dolaþýyor
-               for(int c=0; c<a[0].length; c++){ // O satýrýn kolonlarýný dolaþýyor
+     public void printArray(int a[][]){ 
+          for(int r=0; r<a.length; r++){ 
+               for(int c=0; c<a[0].length; c++){
                     System.out.println(a[r][c] + " ");
                }
           }
      }
 
-     public int[][] sum(int[][] a, int[][] b){ // 2 tane boyutlarý ayný 2 boyutlu listeyi alýp onlarý toplayan metod
-          int row = a.length; // Satýr sayýsý
-          int column = a[0].length; // Kolon sayýsý
+     public int[][] sum(int[][] a, int[][] b){
+          int row = a.length;
+          int column = a[0].length;
           int[][] basket= new int[row][column];
 
-          for(int r=0; r<row; r++){ // Satýrlarý dolaþýyor
-               for(int c=0; c<column; c++){ // O satýrýn kolonlarýný dolaþýyor
-                    basket[r][c] = a[r][c] + b[r][c]; // Yeni matrise öðeleri yerleþtiriyor
+          for(int r=0; r<row; r++){
+               for(int c=0; c<column; c++){
+                    basket[r][c] = a[r][c] + b[r][c];
                }
           } 
-          return basket; // Yeni matrisi çaðýrýyor
+          return basket;
      }
 }
