@@ -1,19 +1,14 @@
-# Bu x in y kalibi string yani yazi tipinde olan verilerle ugrasiyorsaniz 
-# siklikla karsilacaginiz bir sey, basitce su iki sekilde kullanabilirsiniz, 
-# mesela "mecnun" kelimesinin hikaye adli bir string icerisinde olup 
-# olmadigina bakacaksiniz:
-
-story = "mecnun ve leylanin hikayesi"
+story = "story of mecnun and leyla"
 
 if "mecnun" in story:
-	print("Ay Dede")
+	print("grandpa moon")
 
 if "mecnun" not in story:
-	print("Ac Dede")
+	print("grandpa moon")
 
-question = "derdalmaya mi geldin abi?"
+question = "so you did come ha?"
 
 if question.find("erdal") == -1:
-	print ("bakkal bos")
+	print ("shop is empty")
 else:
-	print ("erdal burda")
+	print ("have a nice glass of tea")

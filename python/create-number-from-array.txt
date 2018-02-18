@@ -1,7 +1,7 @@
 list = [1, 2, 3, 4] 
-list2 = [4, 62, 0, 7, 3]
+otherlist = [4, 62, 0, 7, 3]
 
 firstPart = int("".join(map(str, list))) ## Map the list items end create the first part
-secondPart = int("".join(map(str, list2))) ## Map the list2 items end create the second part
+secondPart = int("".join(map(str, otherlist))) ## Map the otherlist items end create the second part
 
-print (birinci, ikinci) ## Merge parts
+print (firstPart, secondPart) ## Merge parts

@@ -1,11 +1,11 @@
 def factorial(f):
   result = 1 
   if f < 0: 
-    print ("Negatif sayilar icin faktoriyel bulunmaz.")
+    print ("No factorial for negative numbers.")
   elif f == 0: 
-    print ("O in faktoriyeli 1 dir.")
+    print ("Factorial of Zero is One.")
   else:
-    for i in range(1,f + 1): 
+    for i in range(1,f+1): 
       result = result*i 
   return result
   

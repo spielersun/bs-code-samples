@@ -1,17 +1,17 @@
 // string to int
-numara = "16012018"
-yeniNumara = int(numara) + 2
-print(yeniNumara)
+number = "16012018"
+newNumber = int(number) + 2
+print(newNumber)
 
 // int to string
-enSonNumara = str(yeniNumara) + " - son hali!!!"
-print(enSonNumara)
+latestNumber = str(newNumber) + " - last version!!!"
+print(latestNumber)
 
 // string list to int list
-veriler = ['16', '01', '2018']
-verilerYeni = list(map(int, veriler))
-print(verilerYeni)
+datesData = ['16', '01', '2018']
+datesDataNew = list(map(int, datesData))
+print(datesDataNew)
 
 // string to datetime, strftime to opposite
 from datetime import datetime
-tarih = datetime.strptime('16 Jan 2018 18:30PM', '%d %b %Y %I:%M%p')
+newDate = datetime.strptime('16 Jan 2018 18:30PM', '%d %b %Y %I:%M%p')
