@@ -1,10 +1,10 @@
-puts case osman
+puts case howHighAreYou
 when 1..9
-     "Osman 1 ile 9 arasýnda."
+     "I can be on the first floor, ninth floor or in between."
 when 10
-     "Osman çok iyi."
+     "Top Floor Dude."
 when String
-     "Osman maalesef yazý, sayý olsa daha iyi olurdu."
+     "A number please with letters and such."
 else
-     "Sen bana bunu verdin #{osman} ama bu benim pek bir iþime yaramýyor."
+     "Hey! You gave me #{osman}, it's not relevant."
 end

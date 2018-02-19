@@ -1,4 +1,4 @@
-Sayfanin kendisi: public/giris.html
+HTML: public/giris.html
 
 <html>
      <head>

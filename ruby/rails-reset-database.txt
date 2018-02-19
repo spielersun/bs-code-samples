@@ -1,10 +1,10 @@
-Tum icerigi silip, yaptiginiz migration lara gore yeni veritabani olusturmak icin:
+EMPTY TABLES AND RECREATE DB with all of the migrations:
 rake db:drop db:create db:migrate db:seed
 
-Veritabanini "schema.rb" dosyasinda gozuktugu gibi tekrar olusturmak icin:
-rake db:schema:load ya da rake db:reset
+RECREATE DB as seen on "schema.rb":
+rake db:schema:load or rake db:reset
 
-Veritabani islemleri:
+DB ACTIONS:
 db:create - Yeni veritabani olusturur, sadece o anki ortam icin.
 db:create:all - Yeni veritabani olusturur, tum ortamlar icin.
 db:drop - Veritabani kaldirir, sadece o anki ortam icin.
