@@ -1,16 +1,17 @@
-int tablo[7][7]; // Ya da int (*a)[7]
-void islemYap(int a[][7]) {
-     // Tablo aktiviteleri
+int array[7][7]; // OR int (*a)[7]
+void doSomething(int a[][7]) {
+     // do something with the two dimensional array
 }
-islemYap(tablo);
+doSomething(array);
+
 
 // Use pointers as parameters
-int *tablo[7];
+int *array[7];
 for(int i = 0; i < 7; i++){
-     tablo[i] = new int[7];
+     array[i] = new int[7];
 }
 
-void islemYap(int *a[7]){
-     // Tablo aktiviteleri
+void doSomething(int *a[7]){
+     // do something with the pointers array
 }
-islemYap(tablo);
+doSomething(array);

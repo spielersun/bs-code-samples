@@ -1,40 +1,36 @@
 ﻿#include <iostream>
 using namespace std;
 
-int boyut = 5;
+int size = 5;
 
 struct student{
-     int numara;
-     float kapasite;
-     char isim[50];
-} stadlar[boyut];
+     int number;
+     float capacity;
+     char name[50];
+} stadiums[size];
 
-// Ardindan ana fonksiyon icerisinde stad bilgilerini tek tek alan 
-// (numara kendiliginden artiyor) bir for dongusu yaziyoruz. Ardindan 
-// bu icerikleri listeleyen baska bir for dongusu. Bunlar "stadlar" 
-// listesinin boyutu kadar ilerliyorlar:
 
 int main(){
-     cout << "Stad bilgilerini giriniz: " << endl;
+     cout << "Specify the properties of our local stadiums: " << endl;
 
-     for(int k = 0; k < boyut; ++k){
-          stadlar[k].numara = k+1;
+     for(int k = 0; k < size; ++k){
+          stadiums[k].number = k+1;
 
-          cout << "numarası:" << stadlar[k].numara << "," << endl;
-          cout << "kapasitesi: ";
-          cin >> stadlar[k].kapasite;
-          cout << "isim: ";
-          cin >> stadlar[k].isim;
+          cout << "Number: << stadiums[k].number << "," << endl;
+          cout << "Capacity: ";
+          cin >> stadiums[k].capacity;
+          cout << "Name: ";
+          cin >> stadiums[k].name;
 
           cout << endl;
      }
 
-     cout << "Girdiginiz icerikler: " << endl;
+     cout << "Total Information: " << endl;
 
      for(int k = 0; k < boyut; ++k){
-          cout << "\nnumara: " << stadlar[k].numara << endl;
-          cout << "kapasite: " << stadlar[k].kapasite << endl;
-          cout << "isim: " << stadlar[k].isim << endl;
+          cout << "\nNumber: " << stadiums[k].number << endl;
+          cout << "Capacity: " << stadiums[k].capacity << endl;
+          cout << "Name: " << stadiums[k].name << endl;
      }
      return 0;
 }
