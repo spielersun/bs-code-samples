@@ -1,65 +1,49 @@
-#include "stdafx.h"
+﻿#include "stdafx.h"
 #include <iostream>
 #include <vector>
 using namespace std;
 
 void quickSort(vector<int>&, int, int);
-int parcalama(vector<int>&, int, int);
-
-/* Kutuphaneleri çagiriyoruz ve ardindan 2 fonksiyonun temel olarak ne alip ne 
-vercegini belirleyen templateleri yaziyoruz. */
+int divide(vector<int>&, int, int);
 
 int main(){
-	vector<int> Liste = {21,13,4,2,11,30,16,5,17};
-	int ilk = 0;
-	int son = 9;
+	vector<int> List = {21,13,4,2,11,30,16,5,17};
+	int start = 0;
+	int end = 9;
 
-	cout << "####### Duzensiz Liste #####d# " << endl;
-	for (auto e : Liste){ cout << e << " "; }
+	cout << "####### Unordered List #####d# " << endl;
+	for (auto e : List){ cout << e << " "; }
 	cout << endl;
 
-	quickSort(Liste, ilk, son);
-	cout << "####### Duzenli Liste #######" << endl;
-	for (auto e : Liste){ cout << e << " ";}
+	quickSort(List, start, end);
+	cout << "####### Ordered List #######" << endl;
+	for (auto e : List){ cout << e << " ";}
 	cout << endl;
 
 	system("pause");
   return 0;
 }
 
-/* Main fonksiyonu islem yaptigimiz ana zorunlu fonksiyondur. Burada bir liste olusturuyorum, 
-baslangic ve bitisinin sayisal degerlerini belirliyorum. "cout" lar ve "for" dongusu ile 
-orjinal listemi gosteriyorum ve ardindan belirledigim degerler ile quicksort fonksiyonunu 
-çalistirip, degismis listeyi gosteriyorum. Tum islemler bitince, pencere ile cıktı gosterdigim 
-icin, kapanmak icin benden tus beklesin diye, programi bekletiyorum. */
-
-void quickSort(vector<int>& Liste, int ilk, int son){
+void quickSort(vector<int>& List, int start, int end){
 	int r;
-	if (ilk<son){
-		r = parcalama(Liste, ilk, son);
-    quickSort(Liste, ilk, r);
-    quickSort(Liste, r + 1, son);
+	if (start<end){
+		r = divide(List, start, end);
+    quickSort(List, start, r);
+    quickSort(List, r + 1, end);
   }
 }
 
-/* Tabii ki bu fonksiyona ilk ile yollanan deger, son olandan kucukse devam edip listeyi bolunmeye 
-yolluyorum. Bolunmus listeden gelen yeni sayinin sol tarafini ve sag tarafini ayri ayri tekrar 
-quicksort a sokuyorum. */
-
-int parcalama(vector<int>& Liste, int ilk, int son){
-  int x = Liste[ilk];
-  int i = ilk;
+int divide(vector<int>& List, int start, int end){
+  int x = List[start];
+  int i = start;
   int j;
 
-  for (j = ilk + 1; j<son; j++){
-    if (Liste[j] <= x){
+  for (j = start + 1; j < end; j++){
+    if (List[j] <= x){
       i = i + 1;
-      swap(Liste[i], Liste[j]);
+      swap(List[i], List[j]);
     }
   }
-  swap(Liste[i], Liste[son]);
+  swap(List[i], List[end]);
   return i;
 }
-
-/* Belirlenen sayiyla olan karsilastirmalarina gore yerlerini degistiriyorum. 
-Pivotu sonuc olarak donduruyorum ki yeni listeleri olusturacak nokta o olsun. */

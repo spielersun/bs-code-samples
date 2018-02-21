@@ -2,41 +2,41 @@
 using namespace std;
 
 int main(){
-     int satirSayisi, kolonSayisi, ilkListe[100][100], ikinciListe[100][100], toplamListe[100][100], i, j;
+     int rows, columns, firstList[100][100], secondList[100][100], sumList[100][100], i, j;
 
-     cout << "100den küçük bir satir sayisi giriniz: ";
-     cin >> satirSayisi;
-     cout << "100den küçük bir kolon sayisi giriniz: ";
-     cin >> kolonSayisi;
+     cout << "Row number? (<100)";
+     cin >> rows;
+     cout << "Column number? (<100)";
+     cin >> columns;
 
-     cout << endl << "Ilk matrisin elemanlarini giriniz: " << endl;
-     for(i = 0; i < satirSayisi; ++i){
-          for(j = 0; j < kolonSayisi; ++j){
-               cout << "Ilk listenin elemanlari:" << i + 1 << j + 1 << " : ";
-               cin >> ilkListe[i][j];
+     cout << endl << "Items of the first Matrix: " << endl;
+     for(i = 0; i < rows; ++i){
+          for(j = 0; j < columns; ++j){
+               cout << "First Matrix:" << i + 1 << j + 1 << " : ";
+               cin >> firstList[i][j];
           }
      }
 
-     cout << endl << "Ikinci matrisin elemanlarini giriniz: " << endl;
-     for(i = 0; i < satirSayisi; ++i){
-          for(j = 0; j < kolonSayisi; ++j){
-               cout << "Ikinci listenin elemanlari:" << i + 1 << j + 1 << " : ";
-               cin >> ikinciListe[i][j];
+     cout << endl << "Items of the second Matrix: " << endl;
+     for(i = 0; i < rows; ++i){
+          for(j = 0; j < columns; ++j){
+               cout << "Second Matrix:" << i + 1 << j + 1 << " : ";
+               cin >> secondList[i][j];
           }
      }
 
      // Toplama
-     for(i = 0; i < satirSayisi; ++i){
-          for(j = 0; j < kolonSayisi; ++j){
-               toplamListe[i][j] = ilkListe[i][j] + ikinciListe[i][j];
+     for(i = 0; i < rows; ++i){
+          for(j = 0; j < columns; ++j){
+               sumList[i][j] = firstList[i][j] + secondList[i][j];
           }
      }
      // Sonuclar
-     cout << endl << "Iki matrisi toplamiyla olusan yeni matris: " << endl;
-     for(i = 0; i < satirSayisi; ++i){
-          for(j = 0; j < kolonSayisi; ++j){
-               cout << toplamListe[i][j] << " ";
-               if(j == kolonSayisi - 1){
+     cout << endl << "SUM Matrix: " << endl;
+     for(i = 0; i < rows; ++i){
+          for(j = 0; j < columns; ++j){
+               cout << sumList[i][j] << " ";
+               if(j == columns - 1){
                     cout << endl;
                }
           }

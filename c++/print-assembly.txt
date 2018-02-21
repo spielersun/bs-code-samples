@@ -1,5 +1,5 @@
-g++ -S kemal.cpp
-g++ -S -o kemalassembly.s kemal.cpp
+g++ -S codeFile.cpp
+g++ -S -o assemblyVersion.s codeFile.cpp
 
-g++ -g -O0 -c -fverbose-asm -Wa,-adhln kemal.cpp > kemalassembly.lst
-g++ -g -O -Wa,-aslh kemal.cpp > kemalassembly.txt
+g++ -g -O0 -c -fverbose-asm -Wa,-adhln codeFile.cpp > assemblyVersion.lst
+g++ -g -O -Wa,-aslh codeFile.cpp > assemblyVersion.txt
