@@ -6,8 +6,8 @@ CSS:
      cursor: default;
 }
 
-// This does not make link reachable just unclickable. 
-// You can still navigate with a TAB button and use the link with an Enter button
+// This does not make link reachable but unclickable. 
+// User still can navigate the page with a TAB key and use the link with an Enter key
 
 Alternative HTML:
 <button class="disabled">Go to the PAGE!</button>

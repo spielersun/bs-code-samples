@@ -1,21 +1,21 @@
-width:200px; // genislik
-height:50px; // yukselik
-border-top:5px solid red; // ust sinir 
-border-bottom:5px solid red; // alt sinir
-background:white; // arka fon
+width:200px; 
+height:50px; 
+border-top:5px solid red; 
+border-bottom:5px solid red; 
+background:white; 
 
-// Bu ogeye sag ve sol border verirsek:
-border-left:5px solid green; // sol sinir
-border-right:5px solid green; // sag sinir
+// Sides
+border-left:5px solid green; 
+border-right:5px solid green; 
 
-// Ucgen Deneme 1 
+// Triangle 1 
 border-color: yellow blue red green;
-border-style: solid; // sinir stili
+border-style: solid; 
 border-width: 100px 100px 100px 100px;
 height: 0px;
 width: 0px;
 
-// Ucgen Deneme 2
+// Triangle 2 
 border-color: transparent transparent red transparent;
 border-style: solid;
 border-width: 0px 100px 100px 100px;

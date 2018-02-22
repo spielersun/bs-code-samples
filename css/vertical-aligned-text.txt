@@ -1,5 +1,5 @@
-1. HTML:
-<p>Binlerce savaşı kazanmak için savaşmak yerine kendinizi fethetmeyi deneyin. Zafer, sizsiniz.</p>
+﻿1. HTML:
+<p>Three things cannot be long hidden: the sun, the moon, and the truth.</p>
 
 1. CSS:
 p {
@@ -29,7 +29,7 @@ div {
 }
 
 3. HTML:
-<div><p>Binlerce savaşı kazanmak için savaşmak yerine kendinizi fethetmeyi deneyin. Zafer, sizsiniz.</p></div>
+<div><p>Three things cannot be long hidden: the sun, the moon, and the truth.</p></div>
 
 3. CSS:
 div {
@@ -45,7 +45,7 @@ p {
 }
 
 4. HTML:
-<div><p>Binlerce savaşı kazanmak için savaşmak yerine kendinizi fethetmeyi deneyin. Zafer, sizsiniz.</p></div>
+<div><p>Three things cannot be long hidden: the sun, the moon, and the truth.</p></div>
 
 4. CSS:
 div {
