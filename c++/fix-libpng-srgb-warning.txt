@@ -1,0 +1,12 @@
+// Terminal, visit "imagemagick.org" for new releases
+rpm -Uvh ImageMagick-7.0.7-23.x86_64.rpm
+rpm -Uvh ImageMagick-libs-7.0.7-23.x86_64.rpm
+convert problematic.png clean.png
+
+// Multiple files
+find . -type f -name "*.png" -exec convert {} -strip {} \;
+
+// Pngcrush, find problematic ones or fix the specified one
+pngcrush -n -q *.png
+pngcrush -ow -rem allb -reduce problematic.png
+
