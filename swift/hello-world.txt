@@ -1,14 +1,14 @@
-func merhaba() {
-     print("Hoo! Ismail Abi!")
+func hello() {
+     print("Hello World!")
      return
 }
 
-merhaba()
+hello()
 
 
-func merhaba2() -> String{
-     return "Merhaba Dunya! Ben de buradayim ve ses verebiliyorum."
+func helloAlter() -> String{
+     return "World.. Hello.. are you there?"
 }
 
-let goster = merhaba2()
-print(goster)
+let show = helloAlter()
+print(show)
