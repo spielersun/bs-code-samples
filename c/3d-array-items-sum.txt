@@ -14,14 +14,14 @@ int main(void){
                { 22, 16, 53, 85 }
           }     
       };
-      int toplam = 0;
+      int sums = 0;
       for(int x = 0 ; x < 3 ; ++x){
             for(int y = 0 ; y < 2 ; ++y){
                   for(int z = 0 ; z < 4 ; ++z){
-                        toplam += matrix[x][y][z];
+                        sums += matrix[x][y][z];
                   }
             }
       }
-      printf("3 boyutlu listenin sayilari toplami %d.", toplam);
+      printf("Sum of the values of this 3 dimensional array is: %d.", sums);
       return 0;
 }

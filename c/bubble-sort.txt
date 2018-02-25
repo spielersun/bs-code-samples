@@ -3,35 +3,35 @@
 
 void main()
 {
-     int liste[MAX];
-     int i, k, toplam, eleman;
+     int list[MAX];
+     int i, k, sums, item;
 
-     printf("Kac sayili bir liste olacak? \n");
-     scanf("%d", &toplam);
-     printf("Sayilari tek tek girin. \n");
+     printf("What is the size of the list? \n");
+     scanf("%d", &sums);
+     printf("Enter values: \n");
 
-     for (i = 0; i < toplam; i++){
-          scanf("%d", &liste[i]);
+     for (i = 0; i < sums; i++){
+          scanf("%d", &list[i]);
      }
 
-     printf("Verdiginiz Sayilar: \n");
+     printf("Values are: \n");
 
-     for (i = 0; i < toplam; i++){
-          printf("%d\n", liste[i]);
+     for (i = 0; i < sums; i++){
+          printf("%d\n", list[i]);
      }
 
-     for (i = 0; i < toplam; i++){
-          for (k = 0; k < (toplam - i - 1); k++){
-               if (liste[k] > liste[k + 1]){
-                    eleman = liste[k];
-                    liste[k] = liste[k + 1];
-                    liste[k + 1] = eleman;
+     for (i = 0; i < sums; i++){
+          for (k = 0; k < (sums - i - 1); k++){
+               if (list[k] > list[k + 1]){
+                    item = list[k];
+                    list[k] = list[k + 1];
+                    list[k + 1] = item;
                }
           }
      }
-     printf("Sirali Liste:\n");
+     printf("Ordered List: \n");
 
-     for (i = 0; i < toplam; i++){
-          printf("%d\n", liste[i]);
+     for (i = 0; i < sums; i++){
+          printf("%d\n", list[i]);
      }
 }
