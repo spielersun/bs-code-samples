@@ -4,22 +4,28 @@
 
 #### Contents taken by their category pages
 
-- C++: http://www.bilgisayamiyorum.com/compute/category/CPLUSPLUS/
-- C: http://www.bilgisayamiyorum.com/compute/category/C/
-- Java: http://www.bilgisayamiyorum.com/compute/category/JAVA/
-- Lisp-Scheme: http://www.bilgisayamiyorum.com/compute/category/LISP/
-- Swift: http://www.bilgisayamiyorum.com/compute/category/IPHONE/
+<ul>
+<li>C++: http://www.bilgisayamiyorum.com/compute/category/CPLUSPLUS/</li>
+<li>C: http://www.bilgisayamiyorum.com/compute/category/C/</li>
+<li>Java: http://www.bilgisayamiyorum.com/compute/category/JAVA/</li>
+<li>Lisp-Scheme: http://www.bilgisayamiyorum.com/compute/category/LISP/</li>
+<li>Swift: http://www.bilgisayamiyorum.com/compute/category/IPHONE/</li>
+</ul>
 
-- Ruby: http://www.bilgisayamiyorum.com/compute/category/RUBY/
-- Python: http://www.bilgisayamiyorum.com/compute/category/PYTHON/
+<ul>
+<li>Ruby: http://www.bilgisayamiyorum.com/compute/category/RUBY/</li>
+<li>Python: http://www.bilgisayamiyorum.com/compute/category/PYTHON/</li>
+</ul>
 
-- SQL: http://www.bilgisayamiyorum.com/compute/category/SQL/
+<ul>
+<li>SQL: http://www.bilgisayamiyorum.com/compute/category/SQL/</li>
+</ul>
 
-- Jquery: http://www.bilgisayamiyorum.com/compute/category/JQUERY/
-- Javascript: http://www.bilgisayamiyorum.com/compute/category/JAVASCRIPT/
-- Css: http://www.bilgisayamiyorum.com/compute/category/CSS/
-
-
+<ul>
+<li>Jquery: http://www.bilgisayamiyorum.com/compute/category/JQUERY/</li>
+<li>Javascript: http://www.bilgisayamiyorum.com/compute/category/JAVASCRIPT/</li>
+<li>Css: http://www.bilgisayamiyorum.com/compute/category/CSS/</li>
+</ul>
 
 
 
