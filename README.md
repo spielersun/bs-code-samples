@@ -1,3 +1,5 @@
+<img src="http://www.bilgisayamiyorum.com/assets/favicon.ico" title="expand" />
+
 ## bilgisayamiyorum.com Code Samples
 
 *NO ultimate goal, these are just code samples taken from bilgisayamiyorum.com which is q&a-ish site that I created in 2010 with ASP.NET. New Django version is live since October 2016.*
