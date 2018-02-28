@@ -1,11 +1,11 @@
-// Use the same message
+// Change commit with the same message
 git commit --amend -C HEAD
 
-// Change message by terminal, alternatively rewrite files by -a
-git commit --amend -m "Yeni Mesaj!"
-git commit -a --amend -m "Yeni Mesaj!"
+// Change the message using terminal, alternatively rewrite files with "-a" parameter
+git commit --amend -m "New Message!"
+git commit -a --amend -m "New Message!"
 
-// Change message by editor, alternatively use the same hash
+// Change the message using editor, alternatively specify the hashcode
 git commit --amend
 git commit --amend -c d792122
 
