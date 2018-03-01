@@ -1,0 +1,16 @@
+# Lists 
+list = [1, 8, 6, 4]
+addendum = [2, 9]
+
+# Plus Sign, Result: [1, 8, 6, 4, 2, 9]
+newList = list + addendum
+list += addendum
+
+# Append, Result: [1, 8, 6, 4, [2, 9]]
+list.append(addendum)
+
+# Extend, Result: [1, 8, 6, 4, 2, 9]
+list.extend(addendum)
+
+# Insert, Result: [1, 8, 6, 4, 0, 2, 9]
+list.insert(4, 0)
