@@ -1,19 +1,19 @@
-Yeni kullanici:
-     $ sudo -u postgres createuser yenikullanici
+New User:
+     $ sudo -u postgres createuser newUserName
 
-Yeni veritabani olusturmak:
-     $ sudo -u postgres createdb yeniveritabani
+New Database:
+     $ sudo -u postgres createdb newDatabaseName
 
-Yeni kullaniciya parola atamak:
+Specift a password for the new user:
      $ sudo -u postgres psql
-     psql=# alter user yenikullanici with encrypted password 'parola';
+     psql=# alter user newUserName with encrypted password 'newPassword';
 
-Az once acilan psql terminalinden cikmadan kullaniciya actiginiz veritabani ile ilgili yetki vermek:
-     psql=# grant all privileges on database yeniveritabani to yenikullanici;
+Give permission to the user:
+     psql=# grant all privileges on database newDatabaseName to newUserName;
 
-Kendiliginden olan "postgres" in super kullanicisini parolasini da soyle belirliyorsunuz:
+Specify a password for the default user "postgres":
      $ sudo -u postgres psql postgres
      postgres=# \password postgres
 
-Postgres kullanicisini geri kilitlemek icin de sunu kullanabilirsiniz:
+Lock "postgres" user:
      passwd --lock postgres

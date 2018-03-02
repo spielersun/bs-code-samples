@@ -6,17 +6,17 @@ INSERT INTO
       answer
    )
 SELECT
-   'mssqlde temel ifadeler',
-   'nasil',
-   'boyle'
+   'Hi! This is a Title.',
+   'What is Life?',
+   'Baby don't hurt me no more.'
 
 
 UPDATE 
    posts
 SET
-   title = 'eskide kaldi',
-   question = 'hala kullanan var mi',
-   answer = 'evet galiba'
+   title = 'This is the new title',
+   question = 'What is Universe?',
+   answer = 'Moslty Nothing.'
 WHERE
    ID = 1
 

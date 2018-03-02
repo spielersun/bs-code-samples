@@ -15,6 +15,3 @@ CREATE PROCEDURE [dbo].[getPost]
           ORDER BY
                POS.ID DESC
      END
-
-AS kullanmak "bu sekilde isimlendir" demek oluyor. Mesela yaptigim 3 harfli kisaltmalar 
-INNER JOIN sirasinda yaptigim birlestirmeler arttikca daha yararli oluyor.
