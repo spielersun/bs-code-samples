@@ -1,0 +1,10 @@
+/* Before Java7 */
+PrintWriter superbPrinter = new PrintWriter("story.txt", "UTF-8");
+superbPrinter.println("A man is but the product of his thoughts.");
+superbPrinter.println("What he thinks, he becomes.");
+superbPrinter.close();
+
+/* Java7+ */
+List<String> lines = Arrays.asList("Each night, when I go to sleep, I die. And the next morning, when I wake up, I am reborn.");
+Path file = Paths.get("story.txt");
+Files.write(file, lines, Charset.forName("UTF-8"));
