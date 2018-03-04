@@ -10,13 +10,14 @@
 <li>C++: http://www.bilgisayamiyorum.com/compute/category/CPLUSPLUS/</li>
 <li>C: http://www.bilgisayamiyorum.com/compute/category/C/</li>
 <li>Java: http://www.bilgisayamiyorum.com/compute/category/JAVA/</li>
-<li>Lisp-Scheme: http://www.bilgisayamiyorum.com/compute/category/LISP/</li>
 <li>Swift: http://www.bilgisayamiyorum.com/compute/category/IPHONE/</li>
 </ul>
 
 <ul>
 <li>Ruby: http://www.bilgisayamiyorum.com/compute/category/RUBY/</li>
 <li>Python: http://www.bilgisayamiyorum.com/compute/category/PYTHON/</li>
+<li>Lisp-Scheme: http://www.bilgisayamiyorum.com/compute/category/LISP/</li>
+<li>R: http://bilgisayamiyorum.com/compute/category/R/</li>
 </ul>
 
 <ul>
@@ -29,7 +30,11 @@
 <li>Css: http://www.bilgisayamiyorum.com/compute/category/CSS/</li>
 </ul>
 
-
+<ul>
+<li>Git: http://bilgisayamiyorum.com/compute/category/G%C4%B0T/</li>
+<li>Terminal: http://bilgisayamiyorum.com/compute/category/LINUX/</li>
+<li>Command-Prompt: http://bilgisayamiyorum.com/compute/category/WINDOWS/</li>
+</ul>
 
 
 
