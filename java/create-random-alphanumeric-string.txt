@@ -1,26 +1,26 @@
 // Not Secure-ish: Just using java.util.Random
-String rastgeleDeger = RandomStringUtils.randomAlphanumeric(16);
+String randomValue = RandomStringUtils.randomAlphanumeric(16);
 
 // Not Secure-ish 2: Just using java.util.Random with a generator
-RandomStringGenerator rastgeleDegerSaglayici = new RandomStringGenerator.Builder().
+RandomStringGenerator randomValueGenerator = new RandomStringGenerator.Builder().
 withinRange('0', 'z').filteredBy(CharacterPredicates.LETTERS, CharacterPredicates.DIGITS).build();
-String rastgeleDeger = rastgeleDegerSaglayici.generate(16);
+String randomValue = randomValueGenerator.generate(16);
 
 // Not Secure-ish 3: UUID way
-public static String rastgeleDegerSaglayici() {
-     String rastgeleUUID= UUID.randomUUID().toString().replaceAll("-", "");
-     return rastgeleUUID;
+public static String randomValueGenerator() {
+     String randomUUID= UUID.randomUUID().toString().replaceAll("-", "");
+     return randomUUID;
 }
-String rastgeleDeger = rastgeleDegerSaglayici();
+String randomValue = randomValueGenerator();
 
 // Secure and fast: using java.security.SecureRandom
-static final String nelerOlsun = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-static SecureRandom karistirici = new SecureRandom();
-String rastgeleDegerSaglayici(int uzunluk){
-     StringBuilder rastgeleDegerYapici = new StringBuilder(uzunluk);
+static final String randomContext = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+static SecureRandom mixer = new SecureRandom();
+String randomValueGenerator(int length){
+     StringBuilder randomValueCreator = new StringBuilder(length);
      for(int i=0;i<uzunluk;i++){
-          rasgeleDegerYapici.append(nelerOlsun.charAt(karistirici.nextInt(nelerOlsun.length())));
+          randomValueCreator.append(randomContext.charAt(mixer.nextInt(randomContext.length())));
      }
-     return rastgeleDeger.toString();
+     return randomValue.toString();
 }
-String rastgeleDeger = rastgeleDegerSaglayici(16);
+String randomValue = randomValueGenerator(16);

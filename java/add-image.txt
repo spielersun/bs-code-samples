@@ -6,27 +6,27 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
-public class ResimGoster extends Panel {
+public class ShowImage extends Panel {
      private static final long serialVersionUID = 1L;
-     private BufferedImage gorsel;
+     private BufferedImage imageSelf;
 
-     public ResimGoster(String gorselyolu) {
+     public ShowImage(String imagePath) {
           try {
-               gorsel = ImageIO.read(new File(gorselyolu));
+               imageSelf = ImageIO.read(new File(imagePath));
           } catch (IOException ie) {
                ie.printStackTrace();
           }
      }
 
      public void paint(Graphics g) {
-          g.drawImage(gorsel, 0, 0, null);
+          g.drawImage(imageSelf, 0, 0, null);
      }
 
      static public void main(String args[]) throws Exception {
-          JFrame cerceve = new JFrame("ResimGoster.java");
-          Panel ekran = new ResimGoster(args[0]);
-          cerceve.getContentPane().add(ekran);
-          cerceve.setSize(800, 640);
+          JFrame imageFrame = new JFrame("ShowImage.java");
+          Panel imageScreen = new ShowImage(args[0]);
+          cerceve.getContentPane().add(imageScreen);
+          cerceve.setSize(900, 600);
           cerceve.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           cerceve.setVisible(true);
      }
@@ -40,19 +40,19 @@ import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
-public class ResimGoster extends Panel {
+public class ShowImage extends Panel {
   static public void main(String args[]) throws Exception {
-    Image gorsel = null;
-    URL adres = new URL("http://www.bilgisayamiyorum.com/images/logo.jpg");
-    gorsel = ImageIO.read(adres);
+    Image imageSelf = null;
+    URL imageAddress = new URL("http://www.bilgisayamiyorum.com/images/logo.jpg");
+    imageSelf = ImageIO.read(imageAddress);
     
-    JFrame cerceve = new JFrame();
-    JLabel resimGosterici = new JLabel(new ImageIcon(gorsel));
-    JPanel anapanel = new JPanel(new BorderLayout());
-    anapanel.add(resimGosterici);
-    cerceve.add(anapanel);
+    JFrame imageFrame = new JFrame();
+    JLabel imageShower = new JLabel(new ImageIcon(imageSelf));
+    JPanel mainFrame = new JPanel(new BorderLayout());
+    mainFrame.add(imageShower);
+    imageFrame.add(mainFrame);
 
-    cerceve.setSize(800, 640);
-    cerceve.setVisible(true);
+    imageFrame.setSize(900, 600);
+    imageFrame.setVisible(true);
   }
 }
