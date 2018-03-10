@@ -1,9 +1,9 @@
 // First Way
-var story = "Gecelerini Beren'i arayarak gecirdi Luthien.";
-var toFind = "Beren";
-if (story.indexOf(toFind) !== -1) { doSomething(); }
+var quote = "Three things cannot be long hidden: the sun, the moon, and the truth.";
+var searchQuery = "sun";
+if (quote.indexOf(searchQuery) !== -1) { doSomething(); }
 
 // Another Way
-var story = "Gecelerini Beren'i arayarak gecirdi Luthien.";
-var toFind = /Beren/;
-toFind.test(story);
+var quote = "Three things cannot be long hidden: the sun, the moon, and the truth.";
+var searchQuery = /sun/;
+searchQuery.test(quote);
