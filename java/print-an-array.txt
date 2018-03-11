@@ -1,7 +1,7 @@
-String[] list = new String[] {"Eren", "Ceren", "Deren", "Beren"};
+String[] list = new String[] {"Isaac", "Marcus", "Zach", "Octavia"};
 double[] points = {6.2, 4.3, 9.1, 2.0};
 int[] grads = {8, 9, 4, 1};
-String[][] matrix = new String[][] {{"Eren", "Tophane"}, {"Ersem", "Levent"}};
+String[][] matrix = new String[][] {{"Elsa", "Oslo"}, {"Uma", "Johannesburg"}};
 
 System.out.println(Arrays.toString(list));
 System.out.println(Arrays.toString(points));

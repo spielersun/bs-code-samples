@@ -1,29 +1,29 @@
-String gizliUUID = "92290df5-e45c-4014-82f1-9fc9b04fe3e9";
+String importantUUID = "92290df5-e45c-4014-82f1-9fc9b04fe3e9";
 
 // Check availability
-if (gizliUUID.contains("-")) {
-     // Burada islem yapilacak.
+if (importantUUID.contains("-")) {
+     // Do something..
 } else {
-     // Burada string o isareti icermedigi icin hata dondurulecek.
+     // Fail
 }
 
-String[] parcalarListesi = gizliUUID.split("-");
+String[] parts = importantUUID.split("-");
 
-String ilkParca = parcalarListesi[0];
-String ikinciParca = parcalarListesi[1];
-String ucuncuParca = parcalarListesi[2];
-String dorduncuParca = parcalarListesi[3];
-String besinciParca = parcalarListesi[4];
+String firstPart = parts[0];
+String secondPart = parts[1];
+String thirdPart = parts[2];
+String fourthPart = parts[3];
+String fifthPart = parts[4];
 
-// Split with limit
-String[] parcalarListesi = gizliUUID.split("-", 3);
+// Split with a limit
+String[] parts = importantUUID.split("-", 3);
 
 // Take the remainder
-String[] parcalarListesi = gizliUUID.split("(?<=-)"); // - isareti soldaki parcada kalir.
-String[] parcalarListesi = gizliUUID.split("(?=-)"); // - isareti sagdaki parcada kalir.
+String[] parts = importantUUID.split("(?<=-)"); // "-" sign stays on the left part.
+String[] parts = importantUUID.split("(?=-)"); // "-" sign stays on the right part.
 
-// Split with metacharacters
-String[] parcalarListesi = gizliUUID.split("\\+");
-String[] parcalarListesi = gizliUUID.split("[+]");
-String[] parcalarListesi = gizliUUID.split(Pattern.quote("+"));
+// Split with a metachar
+String[] parts = importantUUID.split("\\+");
+String[] parts = importantUUID.split("[+]");
+String[] parts = importantUUID.split(Pattern.quote("+"));
 
