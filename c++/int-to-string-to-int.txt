@@ -1,7 +1,7 @@
 /* int to string */
 #include <string>
-std::string dummyStr = std::to_string(dummyInt);
+std::string someString = std::to_string(someInteger);
 
 /* string to int */
 #include <string>
-std::int dummyInt = std::stoi(dummyStr)     
+std::int someInteger = std::stoi(someString)     

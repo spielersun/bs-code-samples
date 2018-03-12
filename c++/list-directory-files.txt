@@ -4,8 +4,8 @@
 
 namespace fs = std::filesystem;
 int main() {
-  std::string yol = "dizinyolu";
-  for (auto & p : fs::directory_iterator(yol)){
+  std::string path = "directoryPath";
+  for (auto & p : fs::directory_iterator(path)){
     std::cout << p << std::endl;
   }
 }

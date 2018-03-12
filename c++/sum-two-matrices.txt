@@ -25,14 +25,14 @@ int main(){
           }
      }
 
-     // Toplama
+     // Additions
      for(i = 0; i < rows; ++i){
           for(j = 0; j < columns; ++j){
                sumList[i][j] = firstList[i][j] + secondList[i][j];
           }
      }
-     // Sonuclar
-     cout << endl << "SUM Matrix: " << endl;
+     // Result
+     cout << endl << "END Matrix (Third one was bad): " << endl;
      for(i = 0; i < rows; ++i){
           for(j = 0; j < columns; ++j){
                cout << sumList[i][j] << " ";

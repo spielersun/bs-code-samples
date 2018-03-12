@@ -1,2 +1,2 @@
-std::vector<int> yourVector;
-int* yourArray = &yourVector[0];
+std::vector<int> someVector;
+int* someArray = &someVector[0];

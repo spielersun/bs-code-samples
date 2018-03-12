@@ -5,7 +5,7 @@ void doSomething(int a[][7]) {
 doSomething(array);
 
 
-// Use pointers as parameters
+// Use the pointers as parameters
 int *array[7];
 for(int i = 0; i < 7; i++){
      array[i] = new int[7];
