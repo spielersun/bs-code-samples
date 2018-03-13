@@ -1,15 +1,15 @@
-// using unzip
+// Using unzip
 apt-get install unzip
-unzip /dosya/osman.zip -d /dosya/burayakoy/
+unzip /file/someFile.zip -d /anotherFile/extractHere/
 
-// using unzip, to current directory
-unzip /dosya/osman.zip
+// Using unzip, to the current directory
+unzip /file/someFile.zip
 
-// using 7zip; "l" just for listing, "x" for nested unzip, "e" for flatten unzip
+// Using 7zip; "l" just for listing, "x" for nested unzip, "e" for flatten unzip
 sudo apt-get install p7zip-full
-7z l osman.zip
-7z x osman.zip
-7z e osman.zip
+7z l someFile.zip
+7z x someFile.zip
+7z e someFile.zip
 
-// unzip everything in this file
+// Unzip everything in a specific file
 find -name '*.zip' -exec sh -c 'unzip -d "${1%.*}" "$1"' _ {} \;

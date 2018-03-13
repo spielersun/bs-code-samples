@@ -1,3 +1,4 @@
+// Using speedtest
 sudo apt install speedtest-cli
 speedtest-cli
 speedtest-cli --bytes
@@ -5,7 +6,7 @@ speedtest-cli --share
 speedtest-cli --list > results.txt 
 speedtest-cli --server serverID
 
-
+// Using nload
 sudo apt-get install nload
 nload
 nload devices

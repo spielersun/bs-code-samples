@@ -3,12 +3,12 @@ ls -l
 ls -lh
 ls -lhR
 
-// Show File Sizes
-du /home/belgeler
+// Show File Size
+du /home/documents
 du --block-size=3M 
-du -hs /home/belgeler
-du -h --max-depth=1 /home/belgeler | sort -nk1
+du -hs /home/documents
+du -h --max-depth=1 /home/documents | sort -nk1
 du -d 0 -hc z*
 
-// Alternate
+// Alternatively, using ncdu
 apt-get install ncdu
