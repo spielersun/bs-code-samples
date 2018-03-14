@@ -25,10 +25,10 @@ public class ShowImage extends Panel {
      static public void main(String args[]) throws Exception {
           JFrame imageFrame = new JFrame("ShowImage.java");
           Panel imageScreen = new ShowImage(args[0]);
-          cerceve.getContentPane().add(imageScreen);
-          cerceve.setSize(900, 600);
-          cerceve.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-          cerceve.setVisible(true);
+          imageFrame.getContentPane().add(imageScreen);
+          imageFrame.setSize(900, 600);
+          imageFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+          imageFrame.setVisible(true);
      }
 }
 
