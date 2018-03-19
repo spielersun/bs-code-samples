@@ -3,7 +3,7 @@ text = 'star trek'
 resText = text[::-1]
 
 // String UTF8
-text = 'Fýstýkçý Þahap'
+text = 'Not Utf; ÄŸÅŸÃ§Ä±Ã¼Ã¶'
 resText = text.decode('utf8')[::-1].encode('utf8')
 
 // List
