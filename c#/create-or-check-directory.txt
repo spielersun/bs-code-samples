@@ -5,14 +5,12 @@ class directoryCreator{
 	public static void Main(){
 		string path = @"<newDirectoryPath>";
           	try {
-	       		// Check If Exists
                		if (Directory.Exists(path)) {
                     		Console.WriteLine("Already Exists.");
                     		return;
-               		} 
-			// If Not
+               		}
                		DirectoryInfo directoryInfo = Directory.CreateDirectory(path);
-               		Console.WriteLine("It's Done.");
+               		Console.WriteLine("It's DONE.");
           	} catch (Exception e) {
                		Console.WriteLine("ERROR: {0}", e.ToString());
           	} 
@@ -20,6 +18,5 @@ class directoryCreator{
      	}
 }
 
-// To Delete Existing Directory
 directoryInfo.Delete();
-Console.WriteLine("It's gone.");
+Console.WriteLine("It's GONE.");
