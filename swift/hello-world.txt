@@ -5,10 +5,9 @@ func hello() {
 
 hello()
 
-
-func helloAlter() -> String{
+func helloAlternative() -> String{
      return "World.. Hello.. are you there?"
 }
 
-let show = helloAlter()
+let show = helloAlternative()
 print(show)

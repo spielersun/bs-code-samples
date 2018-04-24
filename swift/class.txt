@@ -1,3 +1,4 @@
+// Create a class and a list called Gamer and specify its properties such as name and number
 class Gamer {
      var name: String?
      var number: Int = 0
@@ -14,10 +15,16 @@ class Gamer {
      }
 }
 
+// At first sum will be 0 because list is empty
 Gamer.sum()
+
+// Create an object called luke which is inherited from Gamer
 var luke = Gamer()
 luke.name = "luke starkiller"
 luke.number = 1
+
+// Add luke to Gamer list
 Gamer.all.append(luke)
 
+// Now its 1
 Gamer.sum()

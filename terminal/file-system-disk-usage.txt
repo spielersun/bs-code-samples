@@ -13,5 +13,5 @@ df -l
 // For More Info
 man df
 
-// Alternative
+// Alternative Program
 gnome-system-monitor

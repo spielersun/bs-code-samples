@@ -11,15 +11,23 @@ echo "Hi Dalek!"
 // Custom Cronjob:
 crontab -e
 
+// At Reboot:
+@reboot /usr/lib/dalek.sh
+
 // Time and Script
 minute hour day month weekday scriptPath
 * * * * * /scriptPath
 
+// Every Tuesday at 2.15pm run this script: "dalek.sh"
 15 14 * * 2 /usr/lib/dalek.sh
-*/20 * * * * /usr/lib/dalek.sh
-@reboot /usr/lib/dalek.sh
 
+// Every 3 seconds run this script: "dalek.sh"
+*/20 * * * * /usr/lib/dalek.sh
+
+// Every 12 hours run this script: "dalek.sh"
 * 12 * * * root /usr/lib/dalek.sh
+
+// Every day at 1am, 6am 1pm 6pm run this script: "dalek.sh"
 0 1,6,13,18 * * * userName /usr/lib/dalek.sh
 
 // Time Intervals

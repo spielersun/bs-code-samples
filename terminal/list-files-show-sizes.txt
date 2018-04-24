@@ -3,7 +3,7 @@ ls -l
 ls -lh
 ls -lhR
 
-// Show File Size
+// Show File Size with different filters
 du /home/documents
 du --block-size=3M 
 du -hs /home/documents
