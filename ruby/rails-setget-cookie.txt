@@ -1,10 +1,11 @@
+# Create a cookie & show it by adding to text
 class CookieController < ApplicationController
      def create_cookie
-          cookies[:name] = "MURAT"
+          cookies[:firstname] = "JOHN"
           redirect_to :action => "show_cookie"
      end
      def show_cookie
-          name = cookies[:name]
-          render(:text => "Merhaba #{name}!")
+          name = cookies[:firstname]
+          render(:text => "Hello #{name}!")
      end
 end
