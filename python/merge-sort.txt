@@ -1,3 +1,5 @@
+# Merging of two parts
+# Comparison of the two part is happening here
 def merge(left, right):
      oList = []
      i = k = 0
@@ -12,10 +14,14 @@ def merge(left, right):
      oList += right[k:]
      return oList
 
+# If list has one item, return that item
+# If not, divide into two parts & call this function again with them
+# Return them with merge function
 def mergeSort(uList):
      if len(uList) < 2:
           return uList
      b = int(len(uList) / 2)
      return merge(mergeSort(uList[:b]), mergeSort(uList[b:]))
 
+# Call function with a list
 print(mergeSort([4,1,9,6,3,2,10,7,5,8]))
