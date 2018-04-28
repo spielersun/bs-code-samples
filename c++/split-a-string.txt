@@ -1,3 +1,4 @@
+// Divide a text with specified seperators
 #include <iostream>
 #include <string>
 #include <vector>
@@ -6,7 +7,8 @@ using namespace std;
 const vector<string> wordSeparator(const string& given, const char& splitterChar){
      string wordCreator{""};
      vector<string> resultVector;
-
+     
+     // Visit every character
      for(auto anyChar:given){
           if(anyChar != splitterChar){
                wordCreator += anyChar;
@@ -15,7 +17,8 @@ const vector<string> wordSeparator(const string& given, const char& splitterChar
                wordCreator = ""; 
           }
      }
-
+     
+     // Divide until the end
      if(wordCreator != ""){
           resultVector.push_back(wordCreator);
      }
@@ -23,10 +26,12 @@ const vector<string> wordSeparator(const string& given, const char& splitterChar
      return resultVector;
 }
 
+// Use empty space as seperator
 int main(){
      string quote{"The mind is everything what you think you become"};
      vector<string> endVector{wordSeparator(quote, ' ')};
-
+     
+     // Print every word on the vector
      for(auto word:endVector){
           cout << word << endl;
      }
