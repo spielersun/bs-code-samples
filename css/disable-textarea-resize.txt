@@ -1,0 +1,14 @@
+// For all textareas or a specific one
+textarea{resize:none;}
+textarea[name=story]{resize:none;}
+#story{resize:none;}
+
+// Use only vertical or horizontal
+textarea{resize:vertical;}
+textarea{resize:horizontal;}
+
+//No resize, no scrollbar
+textarea{resize:none;overflow:auto;}
+
+// Html Example with rows & columns as size
+<textarea style="overflow:auto;resize:none" rows="20" cols="30"></textarea>
