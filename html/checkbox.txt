@@ -1,17 +1,22 @@
+<!-- unchecked & checked -->
 <input id="ckbMail" type="checkbox" name="mailing" value="Mail"/>
 <input id="ckbMail" type="checkbox" name="mailing" value="Mail" checked="checked"/>
 
+<!-- checkbox list form -->
 <form action="send">
 	<input type="checkbox" name="vehicle" value="mac" />I own a MAC<br />
-	<input type="checkbox" name="vehicle" value="pc" />I own a PC
+	<input type="checkbox" name="vehicle" value="pc" />I own a PC<br />
+	<input type="submit" value="submit"/>
 </form>
 
-<form action="../bin/cream.json">
-	<input type="checkbox" name="fruit"/>Apple<br />
-	<input type="checkbox" name="vehicle"/> Pc sahibiyim<br />
-	<input type="checkbox" name="vehicle"/> Pc sahibiyim<br />
-	<input type="checkbox" name="vehicle"/> Pc sahibiyim<br />
-	<input type="submit" valur="submit"/>
+<!-- checkbox list form --> 
+<form action="../choose.json">
+	<input type="checkbox" name="steam"/>STEAM<br />
+	<input type="checkbox" name="gog"/>GOG<br />
+	<input type="checkbox" name="uplay"/Uplay<br />
+	<input type="checkbox" name="battlenet"/>Battlenet<br />
+	<input type="submit" value="submit"/>
 </form>
 
+<!-- asp.net checkbox --> 
 <asp:CheckBox ID="ckbMail" runat="server" />
