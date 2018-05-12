@@ -1,0 +1,12 @@
+list =[]
+
+# Recommended
+if not list:
+     	print("List is not empty.")
+
+# Not Recommended
+if len(list) == 0:
+	print("List is empty.")
+
+if list == []:
+	print("List is empty.")
