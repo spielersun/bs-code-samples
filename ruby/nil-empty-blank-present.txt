@@ -1,0 +1,43 @@
+# RUBY method: nil? for an object
+nil.nil?
+# true
+
+# RUBY method: empty? for a string, an array or a hash
+nil.empty?
+[].empty?
+"".empty?
+# all true
+
+# empty space counts as space
+' '.empty?
+" ".empty?
+"   ".empty?
+# all false
+
+# RAILS method: blank? for all
+nil.blank?
+[].blank?
+"".blank?
+{}.blank?
+# all true
+
+# even empty spaces, boolean keywords and white spaces
+' '.blank?
+" ".blank?
+"   ".blank?
+true.blank?
+false.blank?
+" \n\r\t".blank?
+# all true
+
+# Not a list that contains empty items
+["", nil, [], ''].blank?
+# false
+
+# Combine with all?
+["", nil, [], ''].all? &:blank?
+# true
+
+# RAILS method: present? is the negation of blank?
+!object.blank? == object.present?
+
