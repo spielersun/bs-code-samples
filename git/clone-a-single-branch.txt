@@ -1,10 +1,12 @@
+// Cloning a branch from a repository:
 git clone --branch <spesificBranch> <repository>
 
+// Basic examples:
 git clone -b notMasterBranch https://github.com/spielersun/bs-source.git
 git clone -b notMasterBranch git@github.com:spielersun/bs-source.git
 
-Add --single-branch, it's safer:
+// Add --single-branch parameter, it's safer:
 git clone -b notMasterBranch --single-branch https://github.com/spielersun/bs-source.git
 
-Add path to specify the target file:
+// Add a path to specify the target file:
 git clone git@github.com:spielersun/bs-source.git -b notMasterBranch --single-branch /local/target/path
