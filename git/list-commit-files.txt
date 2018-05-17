@@ -1,1 +1,20 @@
+// NO Parameters
+git diff-tree bb18ss19
+
+// Clean Ways
+git diff-tree --name-only bb18ss19
 git diff-tree --no-commit-id --name-only -r bb18ss19
+git diff-tree --no-commit-id --name-status bb18ss19
+git diff-tree --pretty="" --name-only bb18ss19
+
+// For non-scripts only:
+git show --stat --oneline bb18ss19 
+git show --name-only --oneline bb18ss19
+
+// Difference between two commits
+git diff --name-status bb18ss19 bb18ss20
+git diff --name-only bb18ss19 bb18ss20
+
+// List of all files in the commit
+git ls-tree --name-only -r bb18ss19
+git ls-tree --name-only -r HEAD
