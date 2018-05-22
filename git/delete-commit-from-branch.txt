@@ -1,0 +1,9 @@
+git reset --hard <sha1-commit-id>
+git reset --soft HEAD~N
+git push origin HEAD --force
+
+git rebase -i HEAD~N
+git rebase -i <sha1-commit-id>~N
+
+git revert HEAD
+git revert <sha1-commit-id>
