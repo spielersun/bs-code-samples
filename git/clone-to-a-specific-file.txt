@@ -1,0 +1,7 @@
+git clone git@github.com:spielersun/bs-source.git /target/folder
+git clone git@github.com:spielersun/bs-source.git .
+
+git clone https://github.com/spielersun/bs-source.git /target/folder
+git clone https://github.com/spielersun/bs-source.git
+
+git clone git@github.com:spielersun/bs-source.git -b notMasterBranch --single-branch /target/folder
