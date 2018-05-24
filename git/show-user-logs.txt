@@ -1,0 +1,11 @@
+git log --author="spielersun"
+git log --author=sun
+git log --author=jack
+git log --author=jack --all
+
+git log --author="\(sun\)\|\(jack\)"
+git log --author='^(?!sun|jack).*$' --perl-regexp
+
+git log --author="sun" --pretty=format:"%h - %an, %ar : %s"
+git log --author=$(git config user.email)
+git log --format=%an | egrep -v 'spiel*' | xargs -n 1 git log -1
