@@ -1,0 +1,5 @@
+// Push an empty reference
+git push --delete origin yourtag
+
+// Local tag
+git tag --delete yourtag
