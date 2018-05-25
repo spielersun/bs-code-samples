@@ -1,0 +1,11 @@
+// Merge
+git checkout new_master
+git merge --strategy=ours --no-commit master
+
+git checkout master
+git merge new_master  
+
+// Purge & Fill
+git checkout master
+git reset --hard new_master
+git push -f origin master
