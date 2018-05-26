@@ -1,0 +1,10 @@
+git diff liveBranch master -- /path/to/story.txt
+git diff liveBranch..master -- /path/to/story.txt
+git diff v3.1.1..master /path/to/story.txt
+
+// From the current working directory to master or vice versa
+git diff ..master /path/to/story.txt
+git diff master.. /path/to/story.txt
+
+// Different files
+git diff branch1:file branch2:file
