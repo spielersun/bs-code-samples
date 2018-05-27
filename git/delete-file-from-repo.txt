@@ -1,0 +1,14 @@
+// Just repo
+git rm --cached story.txt
+git commit -m "remove story.txt"
+git push origin liveBranch  
+
+// Repo & local
+git rm story.txt
+git commit -m "remove story.txt"
+git push origin liveBranch 
+
+git rm -r directory //
+
+git rm -r story.txt
+git clean -fdx
