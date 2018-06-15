@@ -1,11 +1,23 @@
+// Logs of "spielersun" or "jack shepard"
 git log --author="spielersun"
 git log --author=sun
 git log --author=jack
+
+// Search all branches
 git log --author=jack --all
 
+// Logs of the "user"
+git log --author=$(git config user.email)
+
+// Logs of "sun" and "jack" together
 git log --author="\(sun\)\|\(jack\)"
+
+// Logs except the commits of "sun" and "jack"
 git log --author='^(?!sun|jack).*$' --perl-regexp
 
+// Prettify
 git log --author="sun" --pretty=format:"%h - %an, %ar : %s"
-git log --author=$(git config user.email)
 git log --format=%an | egrep -v 'spiel*' | xargs -n 1 git log -1
+
+// To a text file
+cat | git log --author="sun" > sun_details.txt
