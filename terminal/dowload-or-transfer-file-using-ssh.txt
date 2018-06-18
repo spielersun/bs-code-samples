@@ -1,0 +1,13 @@
+scp username@domain.com:information.txt /local/dir
+
+scp -i key_file.pem username@domain.com:/remote/dir/information.txt /local/dir
+
+scp /path/to/local/file username@hostname:/path/to/remote/file          
+
+scp username@domain.com:/path/to/file username2@domain2.com:/path/to/other/file   
+
+$ ssh host 'cat /path/on/remote' > /path/on/local
+
+$ cat /path/on/local | ssh host 'cat > /path/on/remote'
+
+$ ssh host1 'cat /path/on/host1' | ssh host2 'cat > /path/on/host2'
