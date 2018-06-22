@@ -1,0 +1,13 @@
+// Built-in bash variable
+$PWD
+
+// Trim the full path
+current_directory = ${PWD##*/}
+
+// Print in line or in script
+printf '%s\n' "${PWD##*/}"
+echo "${PWD##*/}"
+printf '%q\n' "${PWD##*/}" 
+
+// Use basename program
+basename "$PWD"
