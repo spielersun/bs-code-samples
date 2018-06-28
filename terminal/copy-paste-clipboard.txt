@@ -1,0 +1,22 @@
+// install xclip
+sudo apt-get install xclip
+
+// use x-clipboard, copy a file and paste with "o"
+cat file | xclip 
+xclip -o
+
+// use system clipboard
+cat file | xclip -selection clipboard
+xclip -selection clipboard -o
+
+// transform them into your own method
+alias copythis='xclip -selection clipboard'
+alias pastethis='xclip -selection clipboard -o'
+
+// shorter lines
+xclip -sel c
+xclip -sel c -o
+
+// example
+pwd | copythis
+cd 'pastethis'
