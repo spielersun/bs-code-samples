@@ -1,0 +1,3 @@
+get_node("rigid_body").free()
+
+get_node("rigid_body").queue_free()
