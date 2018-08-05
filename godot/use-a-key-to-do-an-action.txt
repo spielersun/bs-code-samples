@@ -1,0 +1,13 @@
+// You need to set the process true in the old version
+extends Node2D
+func _ready():
+    set_process(true)
+
+// But after godot3, you dont need that
+func _process(delta):   if Input.is_action_pressed("key_exit"):
+      get_tree().quit()
+
+// For kinematic bodies, you can use this
+func _physics_process(delta):
+   if Input.is_action_just_pressed("key_forwards"):
+      move_right()
