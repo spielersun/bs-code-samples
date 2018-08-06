@@ -1,0 +1,3 @@
+func copy_file():
+   var path = Directory.new();
+   path.copy("res://.saved.txt","user://saved.txt");
