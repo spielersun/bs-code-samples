@@ -1,0 +1,9 @@
+// Play the second animation when the first one is finished
+onready var anims = $sprite_animations
+
+func _ready():
+     anims.connect("animation_finished", self, "animation_changed")
+
+func animation_changed():
+     if anims.animation == "first_anim":
+        anims.play("second_anim")
