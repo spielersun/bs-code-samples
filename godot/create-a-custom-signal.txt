@@ -1,0 +1,11 @@
+signal custom_signal
+
+
+func _ready():
+    connect("custom_signal", self, "signal_received")
+
+func signal_sender():
+    emit_signal("custom_signal")
+
+func signal_received():
+    do_something()
