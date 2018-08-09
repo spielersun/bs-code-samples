@@ -1,0 +1,10 @@
+//Godot 2
+get_viewport().get_rect().size
+
+//Godot 3
+get_viewport().size.x
+get_viewport().size.y
+
+OS.get_screen_size()
+OS.get_real_window_size()
+OS.get_window_size()
