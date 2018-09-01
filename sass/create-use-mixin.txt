@@ -1,0 +1,28 @@
+// Define mixin
+
+=content-template
+    width:600px
+    margin:20px 50px
+    float:left
+
+=social-element
+    width:40px
+    height:40px
+    float:left
+    margin:0px 15px 10px 0px
+    border-radius:7px
+    background-size:cover
+    &:hover
+        box-shadow:0px 0px 3px 3px $color-highlight
+
+
+// Use mixin
+
+h1
+    font-size:26px
+    +content-template
+
+social
+    +content-template
+    &-element_facebook
+        +social-element
