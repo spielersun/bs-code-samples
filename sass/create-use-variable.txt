@@ -1,0 +1,11 @@
+$font-os:'open_sansregular'
+$font-head:30px
+$height-list:200px
+$bg-cont:url('../images/bg/bg_container.png')
+
+body
+    font-family:$font-os
+    font-size:$font-head
+    height:$height-list
+    background:$bg-cont
+
