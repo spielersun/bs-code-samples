@@ -1,0 +1,31 @@
+.playlist
+    +content-template
+    padding:20px 0px
+    background:$color-darkest
+    box-shadow:inset 0px 0px 10px 5px $color-background
+    height:$height-playlist
+    overflow-y:scroll
+    
+    &-element
+        font-family:$font-headline-medium
+        color:$color-background
+        border-bottom:solid 1px $color-dark
+        float:left
+        width:96%
+        margin:0px 2%
+        padding:4px 7px 1px 7px
+        +hover-transition(0.3s)
+
+        &:hover
+            background:$color-background
+            color:$color-dark
+            text-decoration:none
+
+        &.active,&:focus
+            color:$color-highlight
+
+    &-nav
+        +content-template
+        margin:0px 50px 20px 50px
+
+            
