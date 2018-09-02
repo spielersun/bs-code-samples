@@ -15,6 +15,11 @@
     &:hover
         box-shadow:0px 0px 3px 3px $color-highlight
 
+=hover-transition($time)
+    -webkit-transition: all $time ease-in-out
+    -moz-transition: all $time ease-in-out
+    -opera-transition: all $time ease-in-out
+
 
 // Use mixin
 
@@ -24,5 +29,7 @@ h1
 
 social
     +content-template
+    +hover-transition(0.3s)
     &-element_facebook
         +social-element
+
