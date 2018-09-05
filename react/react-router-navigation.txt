@@ -1,1 +1,26 @@
-rout
+/////
+import { withRouter } from 'react-router-dom'
+// this also works with react-router-native
+
+const Button = withRouter(({ history }) => (
+  <button
+    type='button'
+    onClick={() => { history.push('/new-location') }}
+  >
+    Click Me!
+  </button>
+))
+
+/////
+import { Route } from 'react-router-dom'
+
+const Button = () => (
+  <Route render={({ history}) => (
+    <button
+      type='button'
+      onClick={() => { history.push('/new-location') }}
+    >
+      Click Me!
+    </button>
+  )} />
+)
