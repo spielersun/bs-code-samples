@@ -1,1 +1,19 @@
-for
+///
+var rows = [];
+for (var i = 0; i < numrows; i++) {
+    rows.push(<ObjectRow key={i} />);
+}
+return <tbody>{rows}</tbody>;
+
+
+///
+<tbody>
+    {objects.map(function(object, i){
+        return <ObjectRow obj={object} key={i} />;
+    })}
+</tbody>
+
+/// ES6
+<tbody>
+    {objects.map((object, i) => <ObjectRow obj={object} key={i} />)}
+</tbody>
