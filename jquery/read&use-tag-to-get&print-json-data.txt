@@ -1,0 +1,26 @@
+function solution() {
+    var commentDivision = $('.comment-list')[0];
+    var commentCount = commentDivision.getAttribute("data-count");
+    
+    $('.comment-list').text("Loading...");
+    
+    $.ajax({
+        type: "GET",
+        url: "https://www.example.com/comments?count=" + commentCount,
+        success: function(result){
+            var content = ""
+            for (var i in result){
+                content += "<div class=\"comment-item\"><div class=\"comment-item__username\">"
+                content += result[i].username
+                content += "</div><div class=\"comment-item__message\">"
+                content += result[i].message
+                content += "</div></div>"
+            }
+            $('.comment-list').text("");
+            $('.comment-list').html(content);
+        },
+        error: function(){
+            $('.comment-list').text("");
+        }
+    })
+}

@@ -1,0 +1,51 @@
+'use strict';
+
+function solution(U, N) {
+    var currentUserBrands
+    var currentGenderBrands
+    var genderBrandsBatchNeeded
+    
+    var cleanList
+    var newList1
+    var newList2
+    
+    return new Promise((resolve, reject) => {
+        currentUserBrands = getLikedBrands(U.id);
+        currentGenderBrands = getTopBrandsForGender(U.gender);
+        
+        if (currentUserBrands.length >= N){
+             for (var i=0; i<N; i++){
+                 cleanList.push(getLikedBrands(U.id)[i].name)
+             }
+             resolve(cleanList);
+        }
+        else{
+            for (brand in currentUserBrands){newList1.push(brand.name);}
+            for (brand in currentGenderBrands){newList2.push(brand.name);}
+            
+            var wideList = []
+            wideList = mergeBrands(newList1.concat(newList2));
+            
+            if (wideList.length >= N){
+                genderBrandsBatchNeeded = N - newList2.length
+                var ekstraBrands = newList2.splice(0, genderBrandsBatchNeeded)
+                resolve(mergeBrands(newList1.concat(ekstraBrands)));
+            }
+            else{
+                reject(CustomError);
+            }
+        }
+    });
+}
+
+function mergeBrands(list){
+    var newList = list.concat();
+    
+    for (var i=0; i<newList.length; ++i){
+        for (var k=i+1; k<newList.length; ++k){
+            if (newList[i] === newList[k]){
+                newList.splice(k--,1);
+            }
+        }
+    }
+}
