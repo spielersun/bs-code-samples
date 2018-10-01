@@ -1,0 +1,11 @@
+def function():
+   flist = range(3)
+   for item in flist:
+      yield item*item
+
+relfunction = function()
+
+print(relfunction)
+
+for i in relfunction:
+   print(i)
